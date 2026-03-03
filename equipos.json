@@ -1,0 +1,4484 @@
+{
+    "arsenal": {
+        "nombre": "Arsenal",
+        "ataque": 100,
+        "mediocampo": 98,
+        "defensa": 96,
+        "forma": 1.0,
+        "elo": 2062.10424805,
+        "liga": "ENG (Europa)"
+    },
+    "man city": {
+        "nombre": "Man City",
+        "ataque": 93,
+        "mediocampo": 91,
+        "defensa": 89,
+        "forma": 1.0,
+        "elo": 1987.46496582,
+        "liga": "ENG (Europa)"
+    },
+    "bayern": {
+        "nombre": "Bayern",
+        "ataque": 92,
+        "mediocampo": 90,
+        "defensa": 88,
+        "forma": 1.0,
+        "elo": 1980.68786621,
+        "liga": "GER (Europa)"
+    },
+    "liverpool": {
+        "nombre": "Liverpool",
+        "ataque": 90,
+        "mediocampo": 88,
+        "defensa": 86,
+        "forma": 1.0,
+        "elo": 1961.19848633,
+        "liga": "ENG (Europa)"
+    },
+    "paris sg": {
+        "nombre": "Paris SG",
+        "ataque": 89,
+        "mediocampo": 87,
+        "defensa": 85,
+        "forma": 1.0,
+        "elo": 1943.1763916,
+        "liga": "FRA (Europa)"
+    },
+    "barcelona": {
+        "nombre": "Barcelona",
+        "ataque": 88,
+        "mediocampo": 86,
+        "defensa": 84,
+        "forma": 1.0,
+        "elo": 1935.04125977,
+        "liga": "ESP (Europa)"
+    },
+    "aston villa": {
+        "nombre": "Aston Villa",
+        "ataque": 88,
+        "mediocampo": 86,
+        "defensa": 84,
+        "forma": 1.0,
+        "elo": 1932.24182129,
+        "liga": "ENG (Europa)"
+    },
+    "chelsea": {
+        "nombre": "Chelsea",
+        "ataque": 87,
+        "mediocampo": 85,
+        "defensa": 83,
+        "forma": 1.0,
+        "elo": 1922.30725098,
+        "liga": "ENG (Europa)"
+    },
+    "real madrid": {
+        "nombre": "Real Madrid",
+        "ataque": 87,
+        "mediocampo": 85,
+        "defensa": 83,
+        "forma": 1.0,
+        "elo": 1919.40661621,
+        "liga": "ESP (Europa)"
+    },
+    "inter": {
+        "nombre": "Inter",
+        "ataque": 85,
+        "mediocampo": 83,
+        "defensa": 81,
+        "forma": 1.0,
+        "elo": 1900.68273926,
+        "liga": "ITA (Europa)"
+    },
+    "man united": {
+        "nombre": "Man United",
+        "ataque": 84,
+        "mediocampo": 82,
+        "defensa": 80,
+        "forma": 1.0,
+        "elo": 1889.25378418,
+        "liga": "ENG (Europa)"
+    },
+    "newcastle": {
+        "nombre": "Newcastle",
+        "ataque": 83,
+        "mediocampo": 81,
+        "defensa": 79,
+        "forma": 1.0,
+        "elo": 1876.22631836,
+        "liga": "ENG (Europa)"
+    },
+    "sporting": {
+        "nombre": "Sporting",
+        "ataque": 80,
+        "mediocampo": 78,
+        "defensa": 76,
+        "forma": 1.0,
+        "elo": 1851.79492188,
+        "liga": "POR (Europa)"
+    },
+    "brentford": {
+        "nombre": "Brentford",
+        "ataque": 80,
+        "mediocampo": 78,
+        "defensa": 76,
+        "forma": 1.0,
+        "elo": 1847.69799805,
+        "liga": "ENG (Europa)"
+    },
+    "bournemouth": {
+        "nombre": "Bournemouth",
+        "ataque": 80,
+        "mediocampo": 78,
+        "defensa": 76,
+        "forma": 1.0,
+        "elo": 1846.29614258,
+        "liga": "ENG (Europa)"
+    },
+    "brighton": {
+        "nombre": "Brighton",
+        "ataque": 79,
+        "mediocampo": 77,
+        "defensa": 75,
+        "forma": 1.0,
+        "elo": 1842.33166504,
+        "liga": "ENG (Europa)"
+    },
+    "atletico": {
+        "nombre": "Atletico",
+        "ataque": 79,
+        "mediocampo": 77,
+        "defensa": 75,
+        "forma": 1.0,
+        "elo": 1833.43041992,
+        "liga": "ESP (Europa)"
+    },
+    "dortmund": {
+        "nombre": "Dortmund",
+        "ataque": 78,
+        "mediocampo": 76,
+        "defensa": 74,
+        "forma": 1.0,
+        "elo": 1830.56921387,
+        "liga": "GER (Europa)"
+    },
+    "everton": {
+        "nombre": "Everton",
+        "ataque": 77,
+        "mediocampo": 75,
+        "defensa": 73,
+        "forma": 1.0,
+        "elo": 1818.29833984,
+        "liga": "ENG (Europa)"
+    },
+    "fulham": {
+        "nombre": "Fulham",
+        "ataque": 77,
+        "mediocampo": 75,
+        "defensa": 73,
+        "forma": 1.0,
+        "elo": 1814.86218262,
+        "liga": "ENG (Europa)"
+    },
+    "atalanta": {
+        "nombre": "Atalanta",
+        "ataque": 77,
+        "mediocampo": 75,
+        "defensa": 73,
+        "forma": 1.0,
+        "elo": 1812.15478516,
+        "liga": "ITA (Europa)"
+    },
+    "leverkusen": {
+        "nombre": "Leverkusen",
+        "ataque": 77,
+        "mediocampo": 75,
+        "defensa": 73,
+        "forma": 1.0,
+        "elo": 1811.27001953,
+        "liga": "GER (Europa)"
+    },
+    "benfica": {
+        "nombre": "Benfica",
+        "ataque": 76,
+        "mediocampo": 74,
+        "defensa": 72,
+        "forma": 1.0,
+        "elo": 1809.52880859,
+        "liga": "POR (Europa)"
+    },
+    "tottenham": {
+        "nombre": "Tottenham",
+        "ataque": 76,
+        "mediocampo": 74,
+        "defensa": 72,
+        "forma": 1.0,
+        "elo": 1809.24377441,
+        "liga": "ENG (Europa)"
+    },
+    "milan": {
+        "nombre": "Milan",
+        "ataque": 76,
+        "mediocampo": 74,
+        "defensa": 72,
+        "forma": 1.0,
+        "elo": 1809.0526123,
+        "liga": "ITA (Europa)"
+    },
+    "crystal palace": {
+        "nombre": "Crystal Palace",
+        "ataque": 76,
+        "mediocampo": 74,
+        "defensa": 72,
+        "forma": 1.0,
+        "elo": 1801.859375,
+        "liga": "ENG (Europa)"
+    },
+    "roma": {
+        "nombre": "Roma",
+        "ataque": 76,
+        "mediocampo": 74,
+        "defensa": 72,
+        "forma": 1.0,
+        "elo": 1799.9888916,
+        "liga": "ITA (Europa)"
+    },
+    "leeds": {
+        "nombre": "Leeds",
+        "ataque": 75,
+        "mediocampo": 73,
+        "defensa": 71,
+        "forma": 1.0,
+        "elo": 1793.89245605,
+        "liga": "ENG (Europa)"
+    },
+    "forest": {
+        "nombre": "Forest",
+        "ataque": 74,
+        "mediocampo": 72,
+        "defensa": 70,
+        "forma": 1.0,
+        "elo": 1788.25158691,
+        "liga": "ENG (Europa)"
+    },
+    "napoli": {
+        "nombre": "Napoli",
+        "ataque": 74,
+        "mediocampo": 72,
+        "defensa": 70,
+        "forma": 1.0,
+        "elo": 1785.59240723,
+        "liga": "ITA (Europa)"
+    },
+    "porto": {
+        "nombre": "Porto",
+        "ataque": 74,
+        "mediocampo": 72,
+        "defensa": 70,
+        "forma": 1.0,
+        "elo": 1777.83496094,
+        "liga": "POR (Europa)"
+    },
+    "juventus": {
+        "nombre": "Juventus",
+        "ataque": 73,
+        "mediocampo": 71,
+        "defensa": 69,
+        "forma": 1.0,
+        "elo": 1775.01611328,
+        "liga": "ITA (Europa)"
+    },
+    "psv": {
+        "nombre": "PSV",
+        "ataque": 73,
+        "mediocampo": 71,
+        "defensa": 69,
+        "forma": 1.0,
+        "elo": 1772.89501953,
+        "liga": "NED (Europa)"
+    },
+    "lyon": {
+        "nombre": "Lyon",
+        "ataque": 72,
+        "mediocampo": 70,
+        "defensa": 68,
+        "forma": 1.0,
+        "elo": 1762.48547363,
+        "liga": "FRA (Europa)"
+    },
+    "betis": {
+        "nombre": "Betis",
+        "ataque": 72,
+        "mediocampo": 70,
+        "defensa": 68,
+        "forma": 1.0,
+        "elo": 1757.17602539,
+        "liga": "ESP (Europa)"
+    },
+    "lens": {
+        "nombre": "Lens",
+        "ataque": 72,
+        "mediocampo": 70,
+        "defensa": 68,
+        "forma": 1.0,
+        "elo": 1756.8026123,
+        "liga": "FRA (Europa)"
+    },
+    "west ham": {
+        "nombre": "West Ham",
+        "ataque": 71,
+        "mediocampo": 69,
+        "defensa": 67,
+        "forma": 1.0,
+        "elo": 1751.22119141,
+        "liga": "ENG (Europa)"
+    },
+    "stuttgart": {
+        "nombre": "Stuttgart",
+        "ataque": 71,
+        "mediocampo": 69,
+        "defensa": 67,
+        "forma": 1.0,
+        "elo": 1751.15209961,
+        "liga": "GER (Europa)"
+    },
+    "villarreal": {
+        "nombre": "Villarreal",
+        "ataque": 70,
+        "mediocampo": 68,
+        "defensa": 66,
+        "forma": 1.0,
+        "elo": 1743.85559082,
+        "liga": "ESP (Europa)"
+    },
+    "rb leipzig": {
+        "nombre": "RB Leipzig",
+        "ataque": 70,
+        "mediocampo": 68,
+        "defensa": 66,
+        "forma": 1.0,
+        "elo": 1739.02600098,
+        "liga": "GER (Europa)"
+    },
+    "bodoe glimt": {
+        "nombre": "Bodoe Glimt",
+        "ataque": 70,
+        "mediocampo": 68,
+        "defensa": 66,
+        "forma": 1.0,
+        "elo": 1738.67822266,
+        "liga": "NOR (Europa)"
+    },
+    "como": {
+        "nombre": "Como",
+        "ataque": 70,
+        "mediocampo": 68,
+        "defensa": 66,
+        "forma": 1.0,
+        "elo": 1736.31774902,
+        "liga": "ITA (Europa)"
+    },
+    "hoffenheim": {
+        "nombre": "Hoffenheim",
+        "ataque": 69,
+        "mediocampo": 67,
+        "defensa": 65,
+        "forma": 1.0,
+        "elo": 1729.27648926,
+        "liga": "GER (Europa)"
+    },
+    "marseille": {
+        "nombre": "Marseille",
+        "ataque": 69,
+        "mediocampo": 67,
+        "defensa": 65,
+        "forma": 1.0,
+        "elo": 1725.07653809,
+        "liga": "FRA (Europa)"
+    },
+    "st gillis": {
+        "nombre": "St Gillis",
+        "ataque": 68,
+        "mediocampo": 66,
+        "defensa": 64,
+        "forma": 1.0,
+        "elo": 1721.2298584,
+        "liga": "BEL (Europa)"
+    },
+    "galatasaray": {
+        "nombre": "Galatasaray",
+        "ataque": 68,
+        "mediocampo": 66,
+        "defensa": 64,
+        "forma": 1.0,
+        "elo": 1721.1661377,
+        "liga": "TUR (Europa)"
+    },
+    "brugge": {
+        "nombre": "Brugge",
+        "ataque": 68,
+        "mediocampo": 66,
+        "defensa": 64,
+        "forma": 1.0,
+        "elo": 1719.33154297,
+        "liga": "BEL (Europa)"
+    },
+    "celta": {
+        "nombre": "Celta",
+        "ataque": 67,
+        "mediocampo": 65,
+        "defensa": 63,
+        "forma": 1.0,
+        "elo": 1712.13220215,
+        "liga": "ESP (Europa)"
+    },
+    "lille": {
+        "nombre": "Lille",
+        "ataque": 67,
+        "mediocampo": 65,
+        "defensa": 63,
+        "forma": 1.0,
+        "elo": 1712.06286621,
+        "liga": "FRA (Europa)"
+    },
+    "strasbourg": {
+        "nombre": "Strasbourg",
+        "ataque": 67,
+        "mediocampo": 65,
+        "defensa": 63,
+        "forma": 1.0,
+        "elo": 1710.67211914,
+        "liga": "FRA (Europa)"
+    },
+    "bilbao": {
+        "nombre": "Bilbao",
+        "ataque": 67,
+        "mediocampo": 65,
+        "defensa": 63,
+        "forma": 1.0,
+        "elo": 1709.2779541,
+        "liga": "ESP (Europa)"
+    },
+    "burnley": {
+        "nombre": "Burnley",
+        "ataque": 67,
+        "mediocampo": 65,
+        "defensa": 63,
+        "forma": 1.0,
+        "elo": 1707.48449707,
+        "liga": "ENG (Europa)"
+    },
+    "lazio": {
+        "nombre": "Lazio",
+        "ataque": 66,
+        "mediocampo": 64,
+        "defensa": 62,
+        "forma": 1.0,
+        "elo": 1700.63562012,
+        "liga": "ITA (Europa)"
+    },
+    "bologna": {
+        "nombre": "Bologna",
+        "ataque": 66,
+        "mediocampo": 64,
+        "defensa": 62,
+        "forma": 1.0,
+        "elo": 1699.64868164,
+        "liga": "ITA (Europa)"
+    },
+    "midtjylland": {
+        "nombre": "Midtjylland",
+        "ataque": 66,
+        "mediocampo": 64,
+        "defensa": 62,
+        "forma": 1.0,
+        "elo": 1699.10205078,
+        "liga": "DEN (Europa)"
+    },
+    "monaco": {
+        "nombre": "Monaco",
+        "ataque": 66,
+        "mediocampo": 64,
+        "defensa": 62,
+        "forma": 1.0,
+        "elo": 1697.00463867,
+        "liga": "FRA (Europa)"
+    },
+    "sunderland": {
+        "nombre": "Sunderland",
+        "ataque": 66,
+        "mediocampo": 64,
+        "defensa": 62,
+        "forma": 1.0,
+        "elo": 1696.41015625,
+        "liga": "ENG (Europa)"
+    },
+    "freiburg": {
+        "nombre": "Freiburg",
+        "ataque": 66,
+        "mediocampo": 64,
+        "defensa": 62,
+        "forma": 1.0,
+        "elo": 1693.43786621,
+        "liga": "GER (Europa)"
+    },
+    "braga": {
+        "nombre": "Braga",
+        "ataque": 65,
+        "mediocampo": 63,
+        "defensa": 61,
+        "forma": 1.0,
+        "elo": 1689.57336426,
+        "liga": "POR (Europa)"
+    },
+    "osasuna": {
+        "nombre": "Osasuna",
+        "ataque": 65,
+        "mediocampo": 63,
+        "defensa": 61,
+        "forma": 1.0,
+        "elo": 1689.4230957,
+        "liga": "ESP (Europa)"
+    },
+    "olympiakos": {
+        "nombre": "Olympiakos",
+        "ataque": 65,
+        "mediocampo": 63,
+        "defensa": 61,
+        "forma": 1.0,
+        "elo": 1687.47851562,
+        "liga": "GRE (Europa)"
+    },
+    "rennes": {
+        "nombre": "Rennes",
+        "ataque": 65,
+        "mediocampo": 63,
+        "defensa": 61,
+        "forma": 1.0,
+        "elo": 1686.82922363,
+        "liga": "FRA (Europa)"
+    },
+    "fenerbahce": {
+        "nombre": "Fenerbahce",
+        "ataque": 65,
+        "mediocampo": 63,
+        "defensa": 61,
+        "forma": 1.0,
+        "elo": 1686.07446289,
+        "liga": "TUR (Europa)"
+    },
+    "wolves": {
+        "nombre": "Wolves",
+        "ataque": 64,
+        "mediocampo": 62,
+        "defensa": 60,
+        "forma": 1.0,
+        "elo": 1680.27709961,
+        "liga": "ENG (Europa)"
+    },
+    "frankfurt": {
+        "nombre": "Frankfurt",
+        "ataque": 64,
+        "mediocampo": 62,
+        "defensa": 60,
+        "forma": 1.0,
+        "elo": 1675.01049805,
+        "liga": "GER (Europa)"
+    },
+    "sociedad": {
+        "nombre": "Sociedad",
+        "ataque": 64,
+        "mediocampo": 62,
+        "defensa": 60,
+        "forma": 1.0,
+        "elo": 1674.32788086,
+        "liga": "ESP (Europa)"
+    },
+    "slavia praha": {
+        "nombre": "Slavia Praha",
+        "ataque": 63,
+        "mediocampo": 61,
+        "defensa": 59,
+        "forma": 1.0,
+        "elo": 1665.24487305,
+        "liga": "CZE (Europa)"
+    },
+    "zenit": {
+        "nombre": "Zenit",
+        "ataque": 63,
+        "mediocampo": 61,
+        "defensa": 59,
+        "forma": 1.0,
+        "elo": 1662.57800293,
+        "liga": "RUS (Europa)"
+    },
+    "brest": {
+        "nombre": "Brest",
+        "ataque": 63,
+        "mediocampo": 61,
+        "defensa": 59,
+        "forma": 1.0,
+        "elo": 1660.36218262,
+        "liga": "FRA (Europa)"
+    },
+    "fiorentina": {
+        "nombre": "Fiorentina",
+        "ataque": 62,
+        "mediocampo": 60,
+        "defensa": 58,
+        "forma": 1.0,
+        "elo": 1657.24377441,
+        "liga": "ITA (Europa)"
+    },
+    "mainz": {
+        "nombre": "Mainz",
+        "ataque": 62,
+        "mediocampo": 60,
+        "defensa": 58,
+        "forma": 1.0,
+        "elo": 1653.60302734,
+        "liga": "GER (Europa)"
+    },
+    "valencia": {
+        "nombre": "Valencia",
+        "ataque": 61,
+        "mediocampo": 59,
+        "defensa": 57,
+        "forma": 1.0,
+        "elo": 1647.1439209,
+        "liga": "ESP (Europa)"
+    },
+    "toulouse": {
+        "nombre": "Toulouse",
+        "ataque": 61,
+        "mediocampo": 59,
+        "defensa": 57,
+        "forma": 1.0,
+        "elo": 1641.35803223,
+        "liga": "FRA (Europa)"
+    },
+    "rayo vallecano": {
+        "nombre": "Rayo Vallecano",
+        "ataque": 61,
+        "mediocampo": 59,
+        "defensa": 57,
+        "forma": 1.0,
+        "elo": 1640.7565918,
+        "liga": "ESP (Europa)"
+    },
+    "fc krasnodar": {
+        "nombre": "FC Krasnodar",
+        "ataque": 61,
+        "mediocampo": 59,
+        "defensa": 57,
+        "forma": 1.0,
+        "elo": 1639.16955566,
+        "liga": "RUS (Europa)"
+    },
+    "ipswich": {
+        "nombre": "Ipswich",
+        "ataque": 60,
+        "mediocampo": 58,
+        "defensa": 56,
+        "forma": 1.0,
+        "elo": 1636.27819824,
+        "liga": "ENG (Europa)"
+    },
+    "coventry": {
+        "nombre": "Coventry",
+        "ataque": 60,
+        "mediocampo": 58,
+        "defensa": 56,
+        "forma": 1.0,
+        "elo": 1635.57336426,
+        "liga": "ENG (Europa)"
+    },
+    "aek": {
+        "nombre": "AEK",
+        "ataque": 60,
+        "mediocampo": 58,
+        "defensa": 56,
+        "forma": 1.0,
+        "elo": 1633.77990723,
+        "liga": "GRE (Europa)"
+    },
+    "girona": {
+        "nombre": "Girona",
+        "ataque": 60,
+        "mediocampo": 58,
+        "defensa": 56,
+        "forma": 1.0,
+        "elo": 1632.16210938,
+        "liga": "ESP (Europa)"
+    },
+    "espanyol": {
+        "nombre": "Espanyol",
+        "ataque": 60,
+        "mediocampo": 58,
+        "defensa": 56,
+        "forma": 1.0,
+        "elo": 1629.81359863,
+        "liga": "ESP (Europa)"
+    },
+    "genoa": {
+        "nombre": "Genoa",
+        "ataque": 60,
+        "mediocampo": 58,
+        "defensa": 56,
+        "forma": 1.0,
+        "elo": 1629.63415527,
+        "liga": "ITA (Europa)"
+    },
+    "union berlin": {
+        "nombre": "Union Berlin",
+        "ataque": 60,
+        "mediocampo": 58,
+        "defensa": 56,
+        "forma": 1.0,
+        "elo": 1627.05822754,
+        "liga": "GER (Europa)"
+    },
+    "lorient": {
+        "nombre": "Lorient",
+        "ataque": 60,
+        "mediocampo": 58,
+        "defensa": 56,
+        "forma": 1.0,
+        "elo": 1626.61376953,
+        "liga": "FRA (Europa)"
+    },
+    "sassuolo": {
+        "nombre": "Sassuolo",
+        "ataque": 59,
+        "mediocampo": 57,
+        "defensa": 55,
+        "forma": 1.0,
+        "elo": 1625.16577148,
+        "liga": "ITA (Europa)"
+    },
+    "augsburg": {
+        "nombre": "Augsburg",
+        "ataque": 59,
+        "mediocampo": 57,
+        "defensa": 55,
+        "forma": 1.0,
+        "elo": 1619.38049316,
+        "liga": "GER (Europa)"
+    },
+    "mallorca": {
+        "nombre": "Mallorca",
+        "ataque": 59,
+        "mediocampo": 57,
+        "defensa": 55,
+        "forma": 1.0,
+        "elo": 1616.86022949,
+        "liga": "ESP (Europa)"
+    },
+    "getafe": {
+        "nombre": "Getafe",
+        "ataque": 58,
+        "mediocampo": 56,
+        "defensa": 54,
+        "forma": 1.0,
+        "elo": 1613.03808594,
+        "liga": "ESP (Europa)"
+    },
+    "sevilla": {
+        "nombre": "Sevilla",
+        "ataque": 58,
+        "mediocampo": 56,
+        "defensa": 54,
+        "forma": 1.0,
+        "elo": 1612.97277832,
+        "liga": "ESP (Europa)"
+    },
+    "parma": {
+        "nombre": "Parma",
+        "ataque": 58,
+        "mediocampo": 56,
+        "defensa": 54,
+        "forma": 1.0,
+        "elo": 1611.30053711,
+        "liga": "ITA (Europa)"
+    },
+    "alaves": {
+        "nombre": "Alaves",
+        "ataque": 58,
+        "mediocampo": 56,
+        "defensa": 54,
+        "forma": 1.0,
+        "elo": 1609.2578125,
+        "liga": "ESP (Europa)"
+    },
+    "werder": {
+        "nombre": "Werder",
+        "ataque": 58,
+        "mediocampo": 56,
+        "defensa": 54,
+        "forma": 1.0,
+        "elo": 1608.95446777,
+        "liga": "GER (Europa)"
+    },
+    "paok": {
+        "nombre": "PAOK",
+        "ataque": 58,
+        "mediocampo": 56,
+        "defensa": 54,
+        "forma": 1.0,
+        "elo": 1608.77429199,
+        "liga": "GRE (Europa)"
+    },
+    "feyenoord": {
+        "nombre": "Feyenoord",
+        "ataque": 58,
+        "mediocampo": 56,
+        "defensa": 54,
+        "forma": 1.0,
+        "elo": 1608.53723145,
+        "liga": "NED (Europa)"
+    },
+    "gladbach": {
+        "nombre": "Gladbach",
+        "ataque": 58,
+        "mediocampo": 56,
+        "defensa": 54,
+        "forma": 1.0,
+        "elo": 1607.87890625,
+        "liga": "GER (Europa)"
+    },
+    "viking": {
+        "nombre": "Viking",
+        "ataque": 57,
+        "mediocampo": 55,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1602.5612793,
+        "liga": "NOR (Europa)"
+    },
+    "middlesbrough": {
+        "nombre": "Middlesbrough",
+        "ataque": 57,
+        "mediocampo": 55,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1602.21728516,
+        "liga": "ENG (Europa)"
+    },
+    "torino": {
+        "nombre": "Torino",
+        "ataque": 57,
+        "mediocampo": 55,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1602.01635742,
+        "liga": "ITA (Europa)"
+    },
+    "udinese": {
+        "nombre": "Udinese",
+        "ataque": 57,
+        "mediocampo": 55,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1600.39379883,
+        "liga": "ITA (Europa)"
+    },
+    "wolfsburg": {
+        "nombre": "Wolfsburg",
+        "ataque": 57,
+        "mediocampo": 55,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1599.77661133,
+        "liga": "GER (Europa)"
+    },
+    "genk": {
+        "nombre": "Genk",
+        "ataque": 57,
+        "mediocampo": 55,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1595.24780273,
+        "liga": "BEL (Europa)"
+    },
+    "cska moskva": {
+        "nombre": "CSKA Moskva",
+        "ataque": 57,
+        "mediocampo": 55,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1595.08752441,
+        "liga": "RUS (Europa)"
+    },
+    "cagliari": {
+        "nombre": "Cagliari",
+        "ataque": 57,
+        "mediocampo": 55,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1595.02893066,
+        "liga": "ITA (Europa)"
+    },
+    "hamburg": {
+        "nombre": "Hamburg",
+        "ataque": 57,
+        "mediocampo": 55,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1594.97045898,
+        "liga": "GER (Europa)"
+    },
+    "ajax": {
+        "nombre": "Ajax",
+        "ataque": 57,
+        "mediocampo": 55,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1594.40649414,
+        "liga": "NED (Europa)"
+    },
+    "viktoria plzen": {
+        "nombre": "Viktoria Plzen",
+        "ataque": 56,
+        "mediocampo": 54,
+        "defensa": 52,
+        "forma": 1.0,
+        "elo": 1591.74108887,
+        "liga": "CZE (Europa)"
+    },
+    "sparta praha": {
+        "nombre": "Sparta Praha",
+        "ataque": 56,
+        "mediocampo": 54,
+        "defensa": 52,
+        "forma": 1.0,
+        "elo": 1590.91137695,
+        "liga": "CZE (Europa)"
+    },
+    "nice": {
+        "nombre": "Nice",
+        "ataque": 56,
+        "mediocampo": 54,
+        "defensa": 52,
+        "forma": 1.0,
+        "elo": 1587.53234863,
+        "liga": "FRA (Europa)"
+    },
+    "elche": {
+        "nombre": "Elche",
+        "ataque": 56,
+        "mediocampo": 54,
+        "defensa": 52,
+        "forma": 1.0,
+        "elo": 1586.67797852,
+        "liga": "ESP (Europa)"
+    },
+    "venezia": {
+        "nombre": "Venezia",
+        "ataque": 56,
+        "mediocampo": 54,
+        "defensa": 52,
+        "forma": 1.0,
+        "elo": 1585.87475586,
+        "liga": "ITA (Europa)"
+    },
+    "southampton": {
+        "nombre": "Southampton",
+        "ataque": 55,
+        "mediocampo": 53,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1582.08813477,
+        "liga": "ENG (Europa)"
+    },
+    "fc kobenhavn": {
+        "nombre": "FC Kobenhavn",
+        "ataque": 55,
+        "mediocampo": 53,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1580.7064209,
+        "liga": "DEN (Europa)"
+    },
+    "crvena zvezda": {
+        "nombre": "Crvena Zvezda",
+        "ataque": 55,
+        "mediocampo": 53,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1579.74633789,
+        "liga": "SRB (Europa)"
+    },
+    "aarhus": {
+        "nombre": "Aarhus",
+        "ataque": 55,
+        "mediocampo": 53,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1579.13916016,
+        "liga": "DEN (Europa)"
+    },
+    "sheffield united": {
+        "nombre": "Sheffield United",
+        "ataque": 55,
+        "mediocampo": 53,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1576.63269043,
+        "liga": "ENG (Europa)"
+    },
+    "lok moskva": {
+        "nombre": "Lok Moskva",
+        "ataque": 55,
+        "mediocampo": 53,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1576.38354492,
+        "liga": "RUS (Europa)"
+    },
+    "millwall": {
+        "nombre": "Millwall",
+        "ataque": 55,
+        "mediocampo": 53,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1574.02233887,
+        "liga": "ENG (Europa)"
+    },
+    "koeln": {
+        "nombre": "Koeln",
+        "ataque": 55,
+        "mediocampo": 53,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1573.64611816,
+        "liga": "GER (Europa)"
+    },
+    "levante": {
+        "nombre": "Levante",
+        "ataque": 55,
+        "mediocampo": 53,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1572.92175293,
+        "liga": "ESP (Europa)"
+    },
+    "le havre": {
+        "nombre": "Le Havre",
+        "ataque": 54,
+        "mediocampo": 52,
+        "defensa": 50,
+        "forma": 1.0,
+        "elo": 1565.81005859,
+        "liga": "FRA (Europa)"
+    },
+    "hull": {
+        "nombre": "Hull",
+        "ataque": 54,
+        "mediocampo": 52,
+        "defensa": 50,
+        "forma": 1.0,
+        "elo": 1563.32751465,
+        "liga": "ENG (Europa)"
+    },
+    "paphos": {
+        "nombre": "Paphos",
+        "ataque": 54,
+        "mediocampo": 52,
+        "defensa": 50,
+        "forma": 1.0,
+        "elo": 1561.80773926,
+        "liga": "CYP (Europa)"
+    },
+    "auxerre": {
+        "nombre": "Auxerre",
+        "ataque": 54,
+        "mediocampo": 52,
+        "defensa": 50,
+        "forma": 1.0,
+        "elo": 1561.6895752,
+        "liga": "FRA (Europa)"
+    },
+    "lecce": {
+        "nombre": "Lecce",
+        "ataque": 53,
+        "mediocampo": 51,
+        "defensa": 49,
+        "forma": 1.0,
+        "elo": 1561.37121582,
+        "liga": "ITA (Europa)"
+    },
+    "st pauli": {
+        "nombre": "St Pauli",
+        "ataque": 53,
+        "mediocampo": 51,
+        "defensa": 49,
+        "forma": 1.0,
+        "elo": 1559.71704102,
+        "liga": "GER (Europa)"
+    },
+    "angers": {
+        "nombre": "Angers",
+        "ataque": 53,
+        "mediocampo": 51,
+        "defensa": 49,
+        "forma": 1.0,
+        "elo": 1558.55371094,
+        "liga": "FRA (Europa)"
+    },
+    "panathinaikos": {
+        "nombre": "Panathinaikos",
+        "ataque": 53,
+        "mediocampo": 51,
+        "defensa": 49,
+        "forma": 1.0,
+        "elo": 1558.55163574,
+        "liga": "GRE (Europa)"
+    },
+    "st truiden": {
+        "nombre": "St Truiden",
+        "ataque": 53,
+        "mediocampo": 51,
+        "defensa": 49,
+        "forma": 1.0,
+        "elo": 1555.04455566,
+        "liga": "BEL (Europa)"
+    },
+    "karabakh agdam": {
+        "nombre": "Karabakh Agdam",
+        "ataque": 53,
+        "mediocampo": 51,
+        "defensa": 49,
+        "forma": 1.0,
+        "elo": 1554.37609863,
+        "liga": "AZE (Europa)"
+    },
+    "celtic": {
+        "nombre": "Celtic",
+        "ataque": 53,
+        "mediocampo": 51,
+        "defensa": 49,
+        "forma": 1.0,
+        "elo": 1552.27770996,
+        "liga": "SCO (Europa)"
+    },
+    "spartak moskva": {
+        "nombre": "Spartak Moskva",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1550.35656738,
+        "liga": "RUS (Europa)"
+    },
+    "oviedo": {
+        "nombre": "Oviedo",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1550.31738281,
+        "liga": "ESP (Europa)"
+    },
+    "almeria": {
+        "nombre": "Almeria",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1549.90515137,
+        "liga": "ESP (Europa)"
+    },
+    "shakhtar": {
+        "nombre": "Shakhtar",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1547.77954102,
+        "liga": "UKR (Europa)"
+    },
+    "santander": {
+        "nombre": "Santander",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1547.51635742,
+        "liga": "ESP (Europa)"
+    },
+    "castellon": {
+        "nombre": "Castellon",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1546.27685547,
+        "liga": "ESP (Europa)"
+    },
+    "mjaellby": {
+        "nombre": "Mjaellby",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1546.16772461,
+        "liga": "SWE (Europa)"
+    },
+    "dinamo zagreb": {
+        "nombre": "Dinamo Zagreb",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1546.04589844,
+        "liga": "CRO (Europa)"
+    },
+    "cremonese": {
+        "nombre": "Cremonese",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1545.9206543,
+        "liga": "ITA (Europa)"
+    },
+    "guimaraes": {
+        "nombre": "Guimaraes",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1545.51489258,
+        "liga": "POR (Europa)"
+    },
+    "monza": {
+        "nombre": "Monza",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1544.54284668,
+        "liga": "ITA (Europa)"
+    },
+    "wrexham": {
+        "nombre": "Wrexham",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1543.63439941,
+        "liga": "ENG (Europa)"
+    },
+    "alkmaar": {
+        "nombre": "Alkmaar",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1543.22009277,
+        "liga": "NED (Europa)"
+    },
+    "reims": {
+        "nombre": "Reims",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1542.72631836,
+        "liga": "FRA (Europa)"
+    },
+    "famalicao": {
+        "nombre": "Famalicao",
+        "ataque": 52,
+        "mediocampo": 50,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1542.52197266,
+        "liga": "POR (Europa)"
+    },
+    "gil vicente": {
+        "nombre": "Gil Vicente",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1539.65856934,
+        "liga": "POR (Europa)"
+    },
+    "rangers": {
+        "nombre": "Rangers",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1538.7869873,
+        "liga": "SCO (Europa)"
+    },
+    "paris fc": {
+        "nombre": "Paris FC",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1538.78466797,
+        "liga": "FRA (Europa)"
+    },
+    "anderlecht": {
+        "nombre": "Anderlecht",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1538.56555176,
+        "liga": "BEL (Europa)"
+    },
+    "brondby": {
+        "nombre": "Brondby",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1538.19970703,
+        "liga": "DEN (Europa)"
+    },
+    "trabzonspor": {
+        "nombre": "Trabzonspor",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1537.36499023,
+        "liga": "TUR (Europa)"
+    },
+    "twente": {
+        "nombre": "Twente",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1537.36450195,
+        "liga": "NED (Europa)"
+    },
+    "las palmas": {
+        "nombre": "Las Palmas",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1536.62463379,
+        "liga": "ESP (Europa)"
+    },
+    "bristol city": {
+        "nombre": "Bristol City",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1535.61657715,
+        "liga": "ENG (Europa)"
+    },
+    "rakow": {
+        "nombre": "Rakow",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1535.38525391,
+        "liga": "POL (Europa)"
+    },
+    "brann": {
+        "nombre": "Brann",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1533.67993164,
+        "liga": "NOR (Europa)"
+    },
+    "norwich": {
+        "nombre": "Norwich",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1533.40270996,
+        "liga": "ENG (Europa)"
+    },
+    "leicester": {
+        "nombre": "Leicester",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1532.55712891,
+        "liga": "ENG (Europa)"
+    },
+    "derby": {
+        "nombre": "Derby",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1530.33056641,
+        "liga": "ENG (Europa)"
+    },
+    "frosinone": {
+        "nombre": "Frosinone",
+        "ataque": 51,
+        "mediocampo": 49,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1530.15930176,
+        "liga": "ITA (Europa)"
+    },
+    "nantes": {
+        "nombre": "Nantes",
+        "ataque": 50,
+        "mediocampo": 48,
+        "defensa": 46,
+        "forma": 1.0,
+        "elo": 1529.06445312,
+        "liga": "FRA (Europa)"
+    },
+    "swansea": {
+        "nombre": "Swansea",
+        "ataque": 50,
+        "mediocampo": 48,
+        "defensa": 46,
+        "forma": 1.0,
+        "elo": 1528.43530273,
+        "liga": "ENG (Europa)"
+    },
+    "besiktas": {
+        "nombre": "Besiktas",
+        "ataque": 50,
+        "mediocampo": 48,
+        "defensa": 46,
+        "forma": 1.0,
+        "elo": 1527.03149414,
+        "liga": "TUR (Europa)"
+    },
+    "nijmegen": {
+        "nombre": "Nijmegen",
+        "ataque": 50,
+        "mediocampo": 48,
+        "defensa": 46,
+        "forma": 1.0,
+        "elo": 1525.56652832,
+        "liga": "NED (Europa)"
+    },
+    "palermo": {
+        "nombre": "Palermo",
+        "ataque": 50,
+        "mediocampo": 48,
+        "defensa": 46,
+        "forma": 1.0,
+        "elo": 1523.95373535,
+        "liga": "ITA (Europa)"
+    },
+    "elversberg": {
+        "nombre": "Elversberg",
+        "ataque": 50,
+        "mediocampo": 48,
+        "defensa": 46,
+        "forma": 1.0,
+        "elo": 1523.94958496,
+        "liga": "GER (Europa)"
+    },
+    "watford": {
+        "nombre": "Watford",
+        "ataque": 50,
+        "mediocampo": 48,
+        "defensa": 46,
+        "forma": 1.0,
+        "elo": 1523.71081543,
+        "liga": "ENG (Europa)"
+    },
+    "darmstadt": {
+        "nombre": "Darmstadt",
+        "ataque": 50,
+        "mediocampo": 48,
+        "defensa": 46,
+        "forma": 1.0,
+        "elo": 1522.84313965,
+        "liga": "GER (Europa)"
+    },
+    "preston": {
+        "nombre": "Preston",
+        "ataque": 50,
+        "mediocampo": 48,
+        "defensa": 46,
+        "forma": 1.0,
+        "elo": 1521.40112305,
+        "liga": "ENG (Europa)"
+    },
+    "paderborn": {
+        "nombre": "Paderborn",
+        "ataque": 50,
+        "mediocampo": 48,
+        "defensa": 46,
+        "forma": 1.0,
+        "elo": 1518.96264648,
+        "liga": "GER (Europa)"
+    },
+    "ferencvaros": {
+        "nombre": "Ferencvaros",
+        "ataque": 50,
+        "mediocampo": 48,
+        "defensa": 46,
+        "forma": 1.0,
+        "elo": 1518.83679199,
+        "liga": "HUN (Europa)"
+    },
+    "estoril": {
+        "nombre": "Estoril",
+        "ataque": 50,
+        "mediocampo": 48,
+        "defensa": 46,
+        "forma": 1.0,
+        "elo": 1518.54602051,
+        "liga": "POR (Europa)"
+    },
+    "nordsjaelland": {
+        "nombre": "Nordsjaelland",
+        "ataque": 49,
+        "mediocampo": 47,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1517.81335449,
+        "liga": "DEN (Europa)"
+    },
+    "heidenheim": {
+        "nombre": "Heidenheim",
+        "ataque": 49,
+        "mediocampo": 47,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1515.86022949,
+        "liga": "GER (Europa)"
+    },
+    "stoke": {
+        "nombre": "Stoke",
+        "ataque": 49,
+        "mediocampo": 47,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1515.5246582,
+        "liga": "ENG (Europa)"
+    },
+    "leganes": {
+        "nombre": "Leganes",
+        "ataque": 49,
+        "mediocampo": 47,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1515.12792969,
+        "liga": "ESP (Europa)"
+    },
+    "mechelen": {
+        "nombre": "Mechelen",
+        "ataque": 49,
+        "mediocampo": 47,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1514.18835449,
+        "liga": "BEL (Europa)"
+    },
+    "charleroi": {
+        "nombre": "Charleroi",
+        "ataque": 49,
+        "mediocampo": 47,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1513.18457031,
+        "liga": "BEL (Europa)"
+    },
+    "birmingham": {
+        "nombre": "Birmingham",
+        "ataque": 49,
+        "mediocampo": 47,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1513.17211914,
+        "liga": "ENG (Europa)"
+    },
+    "jagiellonia": {
+        "nombre": "Jagiellonia",
+        "ataque": 49,
+        "mediocampo": 47,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1512.75683594,
+        "liga": "POL (Europa)"
+    },
+    "lech": {
+        "nombre": "Lech",
+        "ataque": 49,
+        "mediocampo": 47,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1512.49780273,
+        "liga": "POL (Europa)"
+    },
+    "verona": {
+        "nombre": "Verona",
+        "ataque": 49,
+        "mediocampo": 47,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1511.83459473,
+        "liga": "ITA (Europa)"
+    },
+    "qpr": {
+        "nombre": "QPR",
+        "ataque": 49,
+        "mediocampo": 47,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1510.71411133,
+        "liga": "ENG (Europa)"
+    },
+    "metz": {
+        "nombre": "Metz",
+        "ataque": 49,
+        "mediocampo": 47,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1510.21630859,
+        "liga": "FRA (Europa)"
+    },
+    "saint-etienne": {
+        "nombre": "Saint-Etienne",
+        "ataque": 49,
+        "mediocampo": 47,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1508.4934082,
+        "liga": "FRA (Europa)"
+    },
+    "hammarby": {
+        "nombre": "Hammarby",
+        "ataque": 49,
+        "mediocampo": 47,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1507.85095215,
+        "liga": "SWE (Europa)"
+    },
+    "hannover": {
+        "nombre": "Hannover",
+        "ataque": 48,
+        "mediocampo": 46,
+        "defensa": 44,
+        "forma": 1.0,
+        "elo": 1506.67138672,
+        "liga": "GER (Europa)"
+    },
+    "salzburg": {
+        "nombre": "Salzburg",
+        "ataque": 48,
+        "mediocampo": 46,
+        "defensa": 44,
+        "forma": 1.0,
+        "elo": 1506.01147461,
+        "liga": "AUT (Europa)"
+    },
+    "antwerp": {
+        "nombre": "Antwerp",
+        "ataque": 48,
+        "mediocampo": 46,
+        "defensa": 44,
+        "forma": 1.0,
+        "elo": 1505.94006348,
+        "liga": "BEL (Europa)"
+    },
+    "pisa": {
+        "nombre": "Pisa",
+        "ataque": 48,
+        "mediocampo": 46,
+        "defensa": 44,
+        "forma": 1.0,
+        "elo": 1504.89367676,
+        "liga": "ITA (Europa)"
+    },
+    "dynamo moskva": {
+        "nombre": "Dynamo Moskva",
+        "ataque": 48,
+        "mediocampo": 46,
+        "defensa": 44,
+        "forma": 1.0,
+        "elo": 1504.17382812,
+        "liga": "RUS (Europa)"
+    },
+    "depor": {
+        "nombre": "Depor",
+        "ataque": 48,
+        "mediocampo": 46,
+        "defensa": 44,
+        "forma": 1.0,
+        "elo": 1502.93249512,
+        "liga": "ESP (Europa)"
+    },
+    "jablonec": {
+        "nombre": "Jablonec",
+        "ataque": 48,
+        "mediocampo": 46,
+        "defensa": 44,
+        "forma": 1.0,
+        "elo": 1502.78686523,
+        "liga": "CZE (Europa)"
+    },
+    "bochum": {
+        "nombre": "Bochum",
+        "ataque": 48,
+        "mediocampo": 46,
+        "defensa": 44,
+        "forma": 1.0,
+        "elo": 1502.47265625,
+        "liga": "GER (Europa)"
+    },
+    "portsmouth": {
+        "nombre": "Portsmouth",
+        "ataque": 48,
+        "mediocampo": 46,
+        "defensa": 44,
+        "forma": 1.0,
+        "elo": 1501.109375,
+        "liga": "ENG (Europa)"
+    },
+    "gent": {
+        "nombre": "Gent",
+        "ataque": 48,
+        "mediocampo": 46,
+        "defensa": 44,
+        "forma": 1.0,
+        "elo": 1500.04516602,
+        "liga": "BEL (Europa)"
+    },
+    "bueyueksehir": {
+        "nombre": "Bueyueksehir",
+        "ataque": 48,
+        "mediocampo": 46,
+        "defensa": 44,
+        "forma": 1.0,
+        "elo": 1497.8638916,
+        "liga": "TUR (Europa)"
+    },
+    "larnaca": {
+        "nombre": "Larnaca",
+        "ataque": 48,
+        "mediocampo": 46,
+        "defensa": 44,
+        "forma": 1.0,
+        "elo": 1496.9440918,
+        "liga": "CYP (Europa)"
+    },
+    "moreirense": {
+        "nombre": "Moreirense",
+        "ataque": 47,
+        "mediocampo": 45,
+        "defensa": 43,
+        "forma": 1.0,
+        "elo": 1496.33398438,
+        "liga": "POR (Europa)"
+    },
+    "malaga": {
+        "nombre": "Malaga",
+        "ataque": 47,
+        "mediocampo": 45,
+        "defensa": 43,
+        "forma": 1.0,
+        "elo": 1495.96875,
+        "liga": "ESP (Europa)"
+    },
+    "cordoba": {
+        "nombre": "Cordoba",
+        "ataque": 47,
+        "mediocampo": 45,
+        "defensa": 43,
+        "forma": 1.0,
+        "elo": 1491.32250977,
+        "liga": "ESP (Europa)"
+    },
+    "viborg": {
+        "nombre": "Viborg",
+        "ataque": 47,
+        "mediocampo": 45,
+        "defensa": 43,
+        "forma": 1.0,
+        "elo": 1491.28747559,
+        "liga": "DEN (Europa)"
+    },
+    "blackburn": {
+        "nombre": "Blackburn",
+        "ataque": 47,
+        "mediocampo": 45,
+        "defensa": 43,
+        "forma": 1.0,
+        "elo": 1490.6809082,
+        "liga": "ENG (Europa)"
+    },
+    "granada": {
+        "nombre": "Granada",
+        "ataque": 47,
+        "mediocampo": 45,
+        "defensa": 43,
+        "forma": 1.0,
+        "elo": 1489.78588867,
+        "liga": "ESP (Europa)"
+    },
+    "eibar": {
+        "nombre": "Eibar",
+        "ataque": 47,
+        "mediocampo": 45,
+        "defensa": 43,
+        "forma": 1.0,
+        "elo": 1489.64489746,
+        "liga": "ESP (Europa)"
+    },
+    "schalke": {
+        "nombre": "Schalke",
+        "ataque": 47,
+        "mediocampo": 45,
+        "defensa": 43,
+        "forma": 1.0,
+        "elo": 1487.61804199,
+        "liga": "GER (Europa)"
+    },
+    "utrecht": {
+        "nombre": "Utrecht",
+        "ataque": 47,
+        "mediocampo": 45,
+        "defensa": 43,
+        "forma": 1.0,
+        "elo": 1487.33654785,
+        "liga": "NED (Europa)"
+    },
+    "westerlo": {
+        "nombre": "Westerlo",
+        "ataque": 46,
+        "mediocampo": 44,
+        "defensa": 42,
+        "forma": 1.0,
+        "elo": 1483.85253906,
+        "liga": "BEL (Europa)"
+    },
+    "djurgarden": {
+        "nombre": "Djurgarden",
+        "ataque": 46,
+        "mediocampo": 44,
+        "defensa": 42,
+        "forma": 1.0,
+        "elo": 1482.56896973,
+        "liga": "SWE (Europa)"
+    },
+    "tromso": {
+        "nombre": "Tromso",
+        "ataque": 46,
+        "mediocampo": 44,
+        "defensa": 42,
+        "forma": 1.0,
+        "elo": 1482.4798584,
+        "liga": "NOR (Europa)"
+    },
+    "aris limassol": {
+        "nombre": "Aris Limassol",
+        "ataque": 46,
+        "mediocampo": 44,
+        "defensa": 42,
+        "forma": 1.0,
+        "elo": 1478.95800781,
+        "liga": "CYP (Europa)"
+    },
+    "catanzaro": {
+        "nombre": "Catanzaro",
+        "ataque": 46,
+        "mediocampo": 44,
+        "defensa": 42,
+        "forma": 1.0,
+        "elo": 1478.04968262,
+        "liga": "ITA (Europa)"
+    },
+    "baltika": {
+        "nombre": "Baltika",
+        "ataque": 46,
+        "mediocampo": 44,
+        "defensa": 42,
+        "forma": 1.0,
+        "elo": 1477.88574219,
+        "liga": "RUS (Europa)"
+    },
+    "gijon": {
+        "nombre": "Gijon",
+        "ataque": 46,
+        "mediocampo": 44,
+        "defensa": 42,
+        "forma": 1.0,
+        "elo": 1477.69567871,
+        "liga": "ESP (Europa)"
+    },
+    "burgos": {
+        "nombre": "Burgos",
+        "ataque": 46,
+        "mediocampo": 44,
+        "defensa": 42,
+        "forma": 1.0,
+        "elo": 1477.01818848,
+        "liga": "ESP (Europa)"
+    },
+    "charlton": {
+        "nombre": "Charlton",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1473.18237305,
+        "liga": "ENG (Europa)"
+    },
+    "sonderjyske": {
+        "nombre": "SonderjyskE",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1471.73217773,
+        "liga": "DEN (Europa)"
+    },
+    "standard": {
+        "nombre": "Standard",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1470.09960938,
+        "liga": "BEL (Europa)"
+    },
+    "hertha": {
+        "nombre": "Hertha",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1469.86157227,
+        "liga": "GER (Europa)"
+    },
+    "arouca": {
+        "nombre": "Arouca",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1469.82800293,
+        "liga": "POR (Europa)"
+    },
+    "beer-sheva": {
+        "nombre": "Beer-Sheva",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1468.04675293,
+        "liga": "ISR (Europa)"
+    },
+    "modena": {
+        "nombre": "Modena",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1467.90185547,
+        "liga": "ITA (Europa)"
+    },
+    "west brom": {
+        "nombre": "West Brom",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1467.12487793,
+        "liga": "ENG (Europa)"
+    },
+    "dunkerque": {
+        "nombre": "Dunkerque",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1466.88574219,
+        "liga": "FRA (Europa)"
+    },
+    "cercle brugge": {
+        "nombre": "Cercle Brugge",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1466.54711914,
+        "liga": "BEL (Europa)"
+    },
+    "molde": {
+        "nombre": "Molde",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1466.40661621,
+        "liga": "NOR (Europa)"
+    },
+    "troyes": {
+        "nombre": "Troyes",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1466.32556152,
+        "liga": "FRA (Europa)"
+    },
+    "craiova": {
+        "nombre": "Craiova",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1466.27575684,
+        "liga": "ROM (Europa)"
+    },
+    "thun": {
+        "nombre": "Thun",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1465.66931152,
+        "liga": "SUI (Europa)"
+    },
+    "hearts": {
+        "nombre": "Hearts",
+        "ataque": 45,
+        "mediocampo": 43,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1464.98022461,
+        "liga": "SCO (Europa)"
+    },
+    "goeztepe": {
+        "nombre": "Goeztepe",
+        "ataque": 44,
+        "mediocampo": 42,
+        "defensa": 40,
+        "forma": 1.0,
+        "elo": 1464.39526367,
+        "liga": "TUR (Europa)"
+    },
+    "lautern": {
+        "nombre": "Lautern",
+        "ataque": 44,
+        "mediocampo": 42,
+        "defensa": 40,
+        "forma": 1.0,
+        "elo": 1464.32824707,
+        "liga": "GER (Europa)"
+    },
+    "cadiz": {
+        "nombre": "Cadiz",
+        "ataque": 44,
+        "mediocampo": 42,
+        "defensa": 40,
+        "forma": 1.0,
+        "elo": 1463.26696777,
+        "liga": "ESP (Europa)"
+    },
+    "slovan liberec": {
+        "nombre": "Slovan Liberec",
+        "ataque": 44,
+        "mediocampo": 42,
+        "defensa": 40,
+        "forma": 1.0,
+        "elo": 1462.51623535,
+        "liga": "CZE (Europa)"
+    },
+    "sparta rotterdam": {
+        "nombre": "Sparta Rotterdam",
+        "ataque": 44,
+        "mediocampo": 42,
+        "defensa": 40,
+        "forma": 1.0,
+        "elo": 1460.5345459,
+        "liga": "NED (Europa)"
+    },
+    "randers": {
+        "nombre": "Randers",
+        "ataque": 44,
+        "mediocampo": 42,
+        "defensa": 40,
+        "forma": 1.0,
+        "elo": 1459.7635498,
+        "liga": "DEN (Europa)"
+    },
+    "rosenborg": {
+        "nombre": "Rosenborg",
+        "ataque": 44,
+        "mediocampo": 42,
+        "defensa": 40,
+        "forma": 1.0,
+        "elo": 1458.28430176,
+        "liga": "NOR (Europa)"
+    },
+    "omonia": {
+        "nombre": "Omonia",
+        "ataque": 44,
+        "mediocampo": 42,
+        "defensa": 40,
+        "forma": 1.0,
+        "elo": 1457.67956543,
+        "liga": "CYP (Europa)"
+    },
+    "albacete": {
+        "nombre": "Albacete",
+        "ataque": 44,
+        "mediocampo": 42,
+        "defensa": 40,
+        "forma": 1.0,
+        "elo": 1456.92321777,
+        "liga": "ESP (Europa)"
+    },
+    "empoli": {
+        "nombre": "Empoli",
+        "ataque": 44,
+        "mediocampo": 42,
+        "defensa": 40,
+        "forma": 1.0,
+        "elo": 1455.7755127,
+        "liga": "ITA (Europa)"
+    },
+    "holstein": {
+        "nombre": "Holstein",
+        "ataque": 43,
+        "mediocampo": 41,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1453.0,
+        "liga": "GER (Europa)"
+    },
+    "sturm graz": {
+        "nombre": "Sturm Graz",
+        "ataque": 43,
+        "mediocampo": 41,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1452.91064453,
+        "liga": "AUT (Europa)"
+    },
+    "ceuta": {
+        "nombre": "Ceuta",
+        "ataque": 43,
+        "mediocampo": 41,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1451.03613281,
+        "liga": "ESP (Europa)"
+    },
+    "sociedad b": {
+        "nombre": "Sociedad B",
+        "ataque": 43,
+        "mediocampo": 41,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1450.43432617,
+        "liga": "ESP (Europa)"
+    },
+    "montpellier": {
+        "nombre": "Montpellier",
+        "ataque": 43,
+        "mediocampo": 41,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1449.44580078,
+        "liga": "FRA (Europa)"
+    },
+    "basel": {
+        "nombre": "Basel",
+        "ataque": 43,
+        "mediocampo": 41,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1448.97143555,
+        "liga": "SUI (Europa)"
+    },
+    "leuven": {
+        "nombre": "Leuven",
+        "ataque": 43,
+        "mediocampo": 41,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1448.95458984,
+        "liga": "BEL (Europa)"
+    },
+    "annecy": {
+        "nombre": "Annecy",
+        "ataque": 43,
+        "mediocampo": 41,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1447.69396973,
+        "liga": "FRA (Europa)"
+    },
+    "cracovia": {
+        "nombre": "Cracovia",
+        "ataque": 43,
+        "mediocampo": 41,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1446.43408203,
+        "liga": "POL (Europa)"
+    },
+    "mirandes": {
+        "nombre": "Mirandes",
+        "ataque": 43,
+        "mediocampo": 41,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1445.50683594,
+        "liga": "ESP (Europa)"
+    },
+    "stgallen": {
+        "nombre": "StGallen",
+        "ataque": 43,
+        "mediocampo": 41,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1443.9921875,
+        "liga": "SUI (Europa)"
+    },
+    "heerenveen": {
+        "nombre": "Heerenveen",
+        "ataque": 43,
+        "mediocampo": 41,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1443.4699707,
+        "liga": "NED (Europa)"
+    },
+    "rodez": {
+        "nombre": "Rodez",
+        "ataque": 43,
+        "mediocampo": 41,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1443.07165527,
+        "liga": "FRA (Europa)"
+    },
+    "casa pia": {
+        "nombre": "Casa Pia",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1442.59057617,
+        "liga": "POR (Europa)"
+    },
+    "oxford": {
+        "nombre": "Oxford",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1441.89660645,
+        "liga": "ENG (Europa)"
+    },
+    "pogon": {
+        "nombre": "Pogon",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1441.6270752,
+        "liga": "POL (Europa)"
+    },
+    "juve stabia": {
+        "nombre": "Juve Stabia",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1440.74731445,
+        "liga": "ITA (Europa)"
+    },
+    "razgrad": {
+        "nombre": "Razgrad",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1440.64257812,
+        "liga": "BUL (Europa)"
+    },
+    "gyoer": {
+        "nombre": "Gyoer",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1440.62451172,
+        "liga": "HUN (Europa)"
+    },
+    "steaua": {
+        "nombre": "Steaua",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1440.14355469,
+        "liga": "ROM (Europa)"
+    },
+    "lugano": {
+        "nombre": "Lugano",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1439.38684082,
+        "liga": "SUI (Europa)"
+    },
+    "santa clara": {
+        "nombre": "Santa Clara",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1438.72119141,
+        "liga": "POR (Europa)"
+    },
+    "huesca": {
+        "nombre": "Huesca",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1437.96044922,
+        "liga": "ESP (Europa)"
+    },
+    "karlsruhe": {
+        "nombre": "Karlsruhe",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1437.65490723,
+        "liga": "GER (Europa)"
+    },
+    "celje": {
+        "nombre": "Celje",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1437.11853027,
+        "liga": "SVN (Europa)"
+    },
+    "sandefjord": {
+        "nombre": "Sandefjord",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1436.36804199,
+        "liga": "NOR (Europa)"
+    },
+    "nuernberg": {
+        "nombre": "Nuernberg",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1436.2109375,
+        "liga": "GER (Europa)"
+    },
+    "rostov": {
+        "nombre": "Rostov",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1435.17077637,
+        "liga": "RUS (Europa)"
+    },
+    "suedtirol": {
+        "nombre": "Suedtirol",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1434.25500488,
+        "liga": "ITA (Europa)"
+    },
+    "guingamp": {
+        "nombre": "Guingamp",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1433.50769043,
+        "liga": "FRA (Europa)"
+    },
+    "duesseldorf": {
+        "nombre": "Duesseldorf",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1432.54321289,
+        "liga": "GER (Europa)"
+    },
+    "fredrikstad": {
+        "nombre": "Fredrikstad",
+        "ataque": 42,
+        "mediocampo": 40,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1432.26757812,
+        "liga": "NOR (Europa)"
+    },
+    "le mans": {
+        "nombre": "Le Mans",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1431.58105469,
+        "liga": "FRA (Europa)"
+    },
+    "levadeiakos": {
+        "nombre": "Levadeiakos",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1431.32067871,
+        "liga": "GRE (Europa)"
+    },
+    "cfr cluj": {
+        "nombre": "CFR Cluj",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1431.22741699,
+        "liga": "ROM (Europa)"
+    },
+    "samsunspor": {
+        "nombre": "Samsunspor",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1430.79663086,
+        "liga": "TUR (Europa)"
+    },
+    "malmoe": {
+        "nombre": "Malmoe",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1430.48388672,
+        "liga": "SWE (Europa)"
+    },
+    "rubin kazan": {
+        "nombre": "Rubin Kazan",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1430.16821289,
+        "liga": "RUS (Europa)"
+    },
+    "aris": {
+        "nombre": "Aris",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1429.80224609,
+        "liga": "GRE (Europa)"
+    },
+    "levski": {
+        "nombre": "Levski",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1429.6661377,
+        "liga": "BUL (Europa)"
+    },
+    "go ahead eagles": {
+        "nombre": "Go Ahead Eagles",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1429.2902832,
+        "liga": "NED (Europa)"
+    },
+    "rijeka": {
+        "nombre": "Rijeka",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1428.51586914,
+        "liga": "CRO (Europa)"
+    },
+    "austria wien": {
+        "nombre": "Austria Wien",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1428.31018066,
+        "liga": "AUT (Europa)"
+    },
+    "hajduk": {
+        "nombre": "Hajduk",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1425.65234375,
+        "liga": "CRO (Europa)"
+    },
+    "gornik": {
+        "nombre": "Gornik",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1424.95690918,
+        "liga": "POL (Europa)"
+    },
+    "rio ave": {
+        "nombre": "Rio Ave",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1424.83532715,
+        "liga": "POR (Europa)"
+    },
+    "lubin": {
+        "nombre": "Lubin",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1423.91711426,
+        "liga": "POL (Europa)"
+    },
+    "silkeborg": {
+        "nombre": "Silkeborg",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1423.50500488,
+        "liga": "DEN (Europa)"
+    },
+    "young boys": {
+        "nombre": "Young Boys",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1422.61474609,
+        "liga": "SUI (Europa)"
+    },
+    "dynamo kyiv": {
+        "nombre": "Dynamo Kyiv",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1422.36462402,
+        "liga": "UKR (Europa)"
+    },
+    "legia": {
+        "nombre": "Legia",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1422.20117188,
+        "liga": "POL (Europa)"
+    },
+    "nacional": {
+        "nombre": "Nacional",
+        "ataque": 41,
+        "mediocampo": 39,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1422.16552734,
+        "liga": "POR (Europa)"
+    },
+    "valladolid": {
+        "nombre": "Valladolid",
+        "ataque": 40,
+        "mediocampo": 38,
+        "defensa": 36,
+        "forma": 1.0,
+        "elo": 1418.37976074,
+        "liga": "ESP (Europa)"
+    },
+    "hibernian": {
+        "nombre": "Hibernian",
+        "ataque": 40,
+        "mediocampo": 38,
+        "defensa": 36,
+        "forma": 1.0,
+        "elo": 1418.31152344,
+        "liga": "SCO (Europa)"
+    },
+    "korona": {
+        "nombre": "Korona",
+        "ataque": 40,
+        "mediocampo": 38,
+        "defensa": 36,
+        "forma": 1.0,
+        "elo": 1417.34765625,
+        "liga": "POL (Europa)"
+    },
+    "m tel aviv": {
+        "nombre": "M Tel Aviv",
+        "ataque": 40,
+        "mediocampo": 38,
+        "defensa": 36,
+        "forma": 1.0,
+        "elo": 1417.34472656,
+        "liga": "ISR (Europa)"
+    },
+    "alverca": {
+        "nombre": "Alverca",
+        "ataque": 40,
+        "mediocampo": 38,
+        "defensa": 36,
+        "forma": 1.0,
+        "elo": 1416.82543945,
+        "liga": "POR (Europa)"
+    },
+    "radomiak": {
+        "nombre": "Radomiak",
+        "ataque": 40,
+        "mediocampo": 38,
+        "defensa": 36,
+        "forma": 1.0,
+        "elo": 1416.25256348,
+        "liga": "POL (Europa)"
+    },
+    "piast gliwice": {
+        "nombre": "Piast Gliwice",
+        "ataque": 40,
+        "mediocampo": 38,
+        "defensa": 36,
+        "forma": 1.0,
+        "elo": 1414.81628418,
+        "liga": "POL (Europa)"
+    },
+    "lask": {
+        "nombre": "LASK",
+        "ataque": 40,
+        "mediocampo": 38,
+        "defensa": 36,
+        "forma": 1.0,
+        "elo": 1414.66943359,
+        "liga": "AUT (Europa)"
+    },
+    "hradec kralove": {
+        "nombre": "Hradec Kralove",
+        "ataque": 40,
+        "mediocampo": 38,
+        "defensa": 36,
+        "forma": 1.0,
+        "elo": 1414.57678223,
+        "liga": "CZE (Europa)"
+    },
+    "sarpsborg": {
+        "nombre": "Sarpsborg",
+        "ataque": 40,
+        "mediocampo": 38,
+        "defensa": 36,
+        "forma": 1.0,
+        "elo": 1413.28613281,
+        "liga": "NOR (Europa)"
+    },
+    "andorra cf": {
+        "nombre": "Andorra CF",
+        "ataque": 40,
+        "mediocampo": 38,
+        "defensa": 36,
+        "forma": 1.0,
+        "elo": 1412.29846191,
+        "liga": "ESP (Europa)"
+    },
+    "spezia": {
+        "nombre": "Spezia",
+        "ataque": 39,
+        "mediocampo": 37,
+        "defensa": 35,
+        "forma": 1.0,
+        "elo": 1410.3503418,
+        "liga": "ITA (Europa)"
+    },
+    "motherwell": {
+        "nombre": "Motherwell",
+        "ataque": 39,
+        "mediocampo": 37,
+        "defensa": 35,
+        "forma": 1.0,
+        "elo": 1409.87084961,
+        "liga": "SCO (Europa)"
+    },
+    "sampdoria": {
+        "nombre": "Sampdoria",
+        "ataque": 39,
+        "mediocampo": 37,
+        "defensa": 35,
+        "forma": 1.0,
+        "elo": 1409.57055664,
+        "liga": "ITA (Europa)"
+    },
+    "odense": {
+        "nombre": "Odense",
+        "ataque": 39,
+        "mediocampo": 37,
+        "defensa": 35,
+        "forma": 1.0,
+        "elo": 1408.60852051,
+        "liga": "DEN (Europa)"
+    },
+    "magdeburg": {
+        "nombre": "Magdeburg",
+        "ataque": 39,
+        "mediocampo": 37,
+        "defensa": 35,
+        "forma": 1.0,
+        "elo": 1407.99902344,
+        "liga": "GER (Europa)"
+    },
+    "gais": {
+        "nombre": "GAIS",
+        "ataque": 39,
+        "mediocampo": 37,
+        "defensa": 35,
+        "forma": 1.0,
+        "elo": 1407.73730469,
+        "liga": "SWE (Europa)"
+    },
+    "red star": {
+        "nombre": "Red Star",
+        "ataque": 39,
+        "mediocampo": 37,
+        "defensa": 35,
+        "forma": 1.0,
+        "elo": 1407.71765137,
+        "liga": "FRA (Europa)"
+    },
+    "alanyaspor": {
+        "nombre": "Alanyaspor",
+        "ataque": 39,
+        "mediocampo": 37,
+        "defensa": 35,
+        "forma": 1.0,
+        "elo": 1406.89611816,
+        "liga": "TUR (Europa)"
+    },
+    "zwolle": {
+        "nombre": "Zwolle",
+        "ataque": 39,
+        "mediocampo": 37,
+        "defensa": 35,
+        "forma": 1.0,
+        "elo": 1405.86450195,
+        "liga": "NED (Europa)"
+    },
+    "estrela amadora": {
+        "nombre": "Estrela Amadora",
+        "ataque": 39,
+        "mediocampo": 37,
+        "defensa": 35,
+        "forma": 1.0,
+        "elo": 1400.81921387,
+        "liga": "POR (Europa)"
+    },
+    "sittard": {
+        "nombre": "Sittard",
+        "ataque": 39,
+        "mediocampo": 37,
+        "defensa": 35,
+        "forma": 1.0,
+        "elo": 1399.62805176,
+        "liga": "NED (Europa)"
+    },
+    "katowice": {
+        "nombre": "Katowice",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1399.51965332,
+        "liga": "POL (Europa)"
+    },
+    "luzern": {
+        "nombre": "Luzern",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1398.84899902,
+        "liga": "SUI (Europa)"
+    },
+    "goeteborg": {
+        "nombre": "Goeteborg",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1398.76123047,
+        "liga": "SWE (Europa)"
+    },
+    "groningen": {
+        "nombre": "Groningen",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1398.19055176,
+        "liga": "NED (Europa)"
+    },
+    "lechia": {
+        "nombre": "Lechia",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1396.72802734,
+        "liga": "POL (Europa)"
+    },
+    "tondela": {
+        "nombre": "Tondela",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1396.41674805,
+        "liga": "POR (Europa)"
+    },
+    "servette": {
+        "nombre": "Servette",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1396.30175781,
+        "liga": "SUI (Europa)"
+    },
+    "sion": {
+        "nombre": "Sion",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1396.18200684,
+        "liga": "SUI (Europa)"
+    },
+    "maccabi haifa": {
+        "nombre": "Maccabi Haifa",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1396.15625,
+        "liga": "ISR (Europa)"
+    },
+    "sigma olomouc": {
+        "nombre": "Sigma Olomouc",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1393.92053223,
+        "liga": "CZE (Europa)"
+    },
+    "ham-kam": {
+        "nombre": "Ham-Kam",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1393.65551758,
+        "liga": "NOR (Europa)"
+    },
+    "aik": {
+        "nombre": "AIK",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1393.45727539,
+        "liga": "SWE (Europa)"
+    },
+    "pau": {
+        "nombre": "Pau",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1393.28198242,
+        "liga": "FRA (Europa)"
+    },
+    "rizespor": {
+        "nombre": "Rizespor",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1392.86071777,
+        "liga": "TUR (Europa)"
+    },
+    "zaragoza": {
+        "nombre": "Zaragoza",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1392.55273438,
+        "liga": "ESP (Europa)"
+    },
+    "cesena": {
+        "nombre": "Cesena",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1392.50134277,
+        "liga": "ITA (Europa)"
+    },
+    "universitatea cluj": {
+        "nombre": "Universitatea Cluj",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1392.08117676,
+        "liga": "ROM (Europa)"
+    },
+    "zulte waregem": {
+        "nombre": "Zulte Waregem",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1391.65478516,
+        "liga": "BEL (Europa)"
+    },
+    "banik ostrava": {
+        "nombre": "Banik Ostrava",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1391.41699219,
+        "liga": "CZE (Europa)"
+    },
+    "carrarese": {
+        "nombre": "Carrarese",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1390.99536133,
+        "liga": "ITA (Europa)"
+    },
+    "grenoble": {
+        "nombre": "Grenoble",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1389.99499512,
+        "liga": "FRA (Europa)"
+    },
+    "bielefeld": {
+        "nombre": "Bielefeld",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1389.98474121,
+        "liga": "GER (Europa)"
+    },
+    "leonesa": {
+        "nombre": "Leonesa",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1389.37695312,
+        "liga": "ESP (Europa)"
+    },
+    "muenster": {
+        "nombre": "Muenster",
+        "ataque": 38,
+        "mediocampo": 36,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1388.82104492,
+        "liga": "GER (Europa)"
+    },
+    "lausanne": {
+        "nombre": "Lausanne",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1388.61364746,
+        "liga": "SUI (Europa)"
+    },
+    "ik sirius": {
+        "nombre": "IK Sirius",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1388.53955078,
+        "liga": "SWE (Europa)"
+    },
+    "terek grozny": {
+        "nombre": "Terek Grozny",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1387.9239502,
+        "liga": "RUS (Europa)"
+    },
+    "rapid bucuresti": {
+        "nombre": "Rapid Bucuresti",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1386.82189941,
+        "liga": "ROM (Europa)"
+    },
+    "wolfsberg": {
+        "nombre": "Wolfsberg",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1386.53796387,
+        "liga": "AUT (Europa)"
+    },
+    "valerenga": {
+        "nombre": "Valerenga",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1384.49084473,
+        "liga": "NOR (Europa)"
+    },
+    "puskas akademia": {
+        "nombre": "Puskas Akademia",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1384.40039062,
+        "liga": "HUN (Europa)"
+    },
+    "beitar": {
+        "nombre": "Beitar",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1384.28881836,
+        "liga": "ISR (Europa)"
+    },
+    "konyaspor": {
+        "nombre": "Konyaspor",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1383.15661621,
+        "liga": "TUR (Europa)"
+    },
+    "kfum oslo": {
+        "nombre": "KFUM Oslo",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1382.02526855,
+        "liga": "NOR (Europa)"
+    },
+    "kasimpasa": {
+        "nombre": "Kasimpasa",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1381.46252441,
+        "liga": "TUR (Europa)"
+    },
+    "hartberg": {
+        "nombre": "Hartberg",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1381.43762207,
+        "liga": "AUT (Europa)"
+    },
+    "clermont": {
+        "nombre": "Clermont",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1381.11120605,
+        "liga": "FRA (Europa)"
+    },
+    "plock": {
+        "nombre": "Plock",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1380.6706543,
+        "liga": "POL (Europa)"
+    },
+    "paksi": {
+        "nombre": "Paksi",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1380.14416504,
+        "liga": "HUN (Europa)"
+    },
+    "kryliya sovetov": {
+        "nombre": "Kryliya Sovetov",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1378.48657227,
+        "liga": "RUS (Europa)"
+    },
+    "kocaelispor": {
+        "nombre": "Kocaelispor",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1378.37585449,
+        "liga": "TUR (Europa)"
+    },
+    "bastia": {
+        "nombre": "Bastia",
+        "ataque": 37,
+        "mediocampo": 35,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1378.05810547,
+        "liga": "FRA (Europa)"
+    },
+    "dinamo bucuresti": {
+        "nombre": "Dinamo Bucuresti",
+        "ataque": 36,
+        "mediocampo": 34,
+        "defensa": 32,
+        "forma": 1.0,
+        "elo": 1376.66052246,
+        "liga": "ROM (Europa)"
+    },
+    "elfsborg": {
+        "nombre": "Elfsborg",
+        "ataque": 36,
+        "mediocampo": 34,
+        "defensa": 32,
+        "forma": 1.0,
+        "elo": 1375.86462402,
+        "liga": "SWE (Europa)"
+    },
+    "gaziantep fk": {
+        "nombre": "Gaziantep FK",
+        "ataque": 36,
+        "mediocampo": 34,
+        "defensa": 32,
+        "forma": 1.0,
+        "elo": 1375.82592773,
+        "liga": "TUR (Europa)"
+    },
+    "akron togliatti": {
+        "nombre": "Akron Togliatti",
+        "ataque": 36,
+        "mediocampo": 34,
+        "defensa": 32,
+        "forma": 1.0,
+        "elo": 1374.86291504,
+        "liga": "RUS (Europa)"
+    },
+    "cska sofia": {
+        "nombre": "CSKA Sofia",
+        "ataque": 36,
+        "mediocampo": 34,
+        "defensa": 32,
+        "forma": 1.0,
+        "elo": 1374.35852051,
+        "liga": "BUL (Europa)"
+    },
+    "motor lublin": {
+        "nombre": "Motor Lublin",
+        "ataque": 36,
+        "mediocampo": 34,
+        "defensa": 32,
+        "forma": 1.0,
+        "elo": 1373.8293457,
+        "liga": "POL (Europa)"
+    },
+    "raal": {
+        "nombre": "RAAL",
+        "ataque": 36,
+        "mediocampo": 34,
+        "defensa": 32,
+        "forma": 1.0,
+        "elo": 1373.77185059,
+        "liga": "BEL (Europa)"
+    },
+    "dender": {
+        "nombre": "Dender",
+        "ataque": 36,
+        "mediocampo": 34,
+        "defensa": 32,
+        "forma": 1.0,
+        "elo": 1372.48681641,
+        "liga": "BEL (Europa)"
+    },
+    "partizan": {
+        "nombre": "Partizan",
+        "ataque": 36,
+        "mediocampo": 34,
+        "defensa": 32,
+        "forma": 1.0,
+        "elo": 1371.64379883,
+        "liga": "SRB (Europa)"
+    },
+    "maribor": {
+        "nombre": "Maribor",
+        "ataque": 36,
+        "mediocampo": 34,
+        "defensa": 32,
+        "forma": 1.0,
+        "elo": 1369.2286377,
+        "liga": "SVN (Europa)"
+    },
+    "haecken": {
+        "nombre": "Haecken",
+        "ataque": 36,
+        "mediocampo": 34,
+        "defensa": 32,
+        "forma": 1.0,
+        "elo": 1368.21459961,
+        "liga": "SWE (Europa)"
+    },
+    "fredericia": {
+        "nombre": "Fredericia",
+        "ataque": 36,
+        "mediocampo": 34,
+        "defensa": 32,
+        "forma": 1.0,
+        "elo": 1367.68408203,
+        "liga": "DEN (Europa)"
+    },
+    "polissya zhytomyr": {
+        "nombre": "Polissya Zhytomyr",
+        "ataque": 35,
+        "mediocampo": 33,
+        "defensa": 31,
+        "forma": 1.0,
+        "elo": 1366.5559082,
+        "liga": "UKR (Europa)"
+    },
+    "slovan bratislava": {
+        "nombre": "Slovan Bratislava",
+        "ataque": 35,
+        "mediocampo": 33,
+        "defensa": 31,
+        "forma": 1.0,
+        "elo": 1366.51843262,
+        "liga": "SLK (Europa)"
+    },
+    "reggiana": {
+        "nombre": "Reggiana",
+        "ataque": 35,
+        "mediocampo": 33,
+        "defensa": 31,
+        "forma": 1.0,
+        "elo": 1364.63720703,
+        "liga": "ITA (Europa)"
+    },
+    "braunschweig": {
+        "nombre": "Braunschweig",
+        "ataque": 35,
+        "mediocampo": 33,
+        "defensa": 31,
+        "forma": 1.0,
+        "elo": 1363.87792969,
+        "liga": "GER (Europa)"
+    },
+    "atromitos": {
+        "nombre": "Atromitos",
+        "ataque": 35,
+        "mediocampo": 33,
+        "defensa": 31,
+        "forma": 1.0,
+        "elo": 1363.16894531,
+        "liga": "GRE (Europa)"
+    },
+    "karvina": {
+        "nombre": "Karvina",
+        "ataque": 35,
+        "mediocampo": 33,
+        "defensa": 31,
+        "forma": 1.0,
+        "elo": 1363.12158203,
+        "liga": "CZE (Europa)"
+    },
+    "padova": {
+        "nombre": "Padova",
+        "ataque": 35,
+        "mediocampo": 33,
+        "defensa": 31,
+        "forma": 1.0,
+        "elo": 1362.93249512,
+        "liga": "ITA (Europa)"
+    },
+    "widzew": {
+        "nombre": "Widzew",
+        "ataque": 35,
+        "mediocampo": 33,
+        "defensa": 31,
+        "forma": 1.0,
+        "elo": 1361.93847656,
+        "liga": "POL (Europa)"
+    },
+    "mantova": {
+        "nombre": "Mantova",
+        "ataque": 35,
+        "mediocampo": 33,
+        "defensa": 31,
+        "forma": 1.0,
+        "elo": 1360.21032715,
+        "liga": "ITA (Europa)"
+    },
+    "fuerth": {
+        "nombre": "Fuerth",
+        "ataque": 35,
+        "mediocampo": 33,
+        "defensa": 31,
+        "forma": 1.0,
+        "elo": 1360.21020508,
+        "liga": "GER (Europa)"
+    },
+    "eyupspor": {
+        "nombre": "Eyupspor",
+        "ataque": 35,
+        "mediocampo": 33,
+        "defensa": 31,
+        "forma": 1.0,
+        "elo": 1359.60046387,
+        "liga": "TUR (Europa)"
+    },
+    "boulogne": {
+        "nombre": "Boulogne",
+        "ataque": 35,
+        "mediocampo": 33,
+        "defensa": 31,
+        "forma": 1.0,
+        "elo": 1357.99462891,
+        "liga": "FRA (Europa)"
+    },
+    "rapid wien": {
+        "nombre": "Rapid Wien",
+        "ataque": 35,
+        "mediocampo": 33,
+        "defensa": 31,
+        "forma": 1.0,
+        "elo": 1356.9473877,
+        "liga": "AUT (Europa)"
+    },
+    "dresden": {
+        "nombre": "Dresden",
+        "ataque": 34,
+        "mediocampo": 32,
+        "defensa": 30,
+        "forma": 1.0,
+        "elo": 1356.17944336,
+        "liga": "GER (Europa)"
+    },
+    "bari": {
+        "nombre": "Bari",
+        "ataque": 34,
+        "mediocampo": 32,
+        "defensa": 30,
+        "forma": 1.0,
+        "elo": 1353.95898438,
+        "liga": "ITA (Europa)"
+    },
+    "lok zagreb": {
+        "nombre": "Lok Zagreb",
+        "ataque": 34,
+        "mediocampo": 32,
+        "defensa": 30,
+        "forma": 1.0,
+        "elo": 1352.66113281,
+        "liga": "CRO (Europa)"
+    },
+    "teplice": {
+        "nombre": "Teplice",
+        "ataque": 34,
+        "mediocampo": 32,
+        "defensa": 30,
+        "forma": 1.0,
+        "elo": 1352.15771484,
+        "liga": "CZE (Europa)"
+    },
+    "fk astana": {
+        "nombre": "FK Astana",
+        "ataque": 34,
+        "mediocampo": 32,
+        "defensa": 30,
+        "forma": 1.0,
+        "elo": 1351.5925293,
+        "liga": "KAZ (Europa)"
+    },
+    "vejle": {
+        "nombre": "Vejle",
+        "ataque": 34,
+        "mediocampo": 32,
+        "defensa": 30,
+        "forma": 1.0,
+        "elo": 1351.29284668,
+        "liga": "DEN (Europa)"
+    },
+    "kayseri": {
+        "nombre": "Kayseri",
+        "ataque": 34,
+        "mediocampo": 32,
+        "defensa": 30,
+        "forma": 1.0,
+        "elo": 1350.82373047,
+        "liga": "TUR (Europa)"
+    },
+    "laval": {
+        "nombre": "Laval",
+        "ataque": 34,
+        "mediocampo": 32,
+        "defensa": 30,
+        "forma": 1.0,
+        "elo": 1350.00842285,
+        "liga": "FRA (Europa)"
+    },
+    "españa": {
+        "nombre": "España (Sel)",
+        "ataque": 94,
+        "mediocampo": 92,
+        "defensa": 91,
+        "forma": 1.0,
+        "elo": 1990,
+        "liga": "Internacional"
+    },
+    "argentina": {
+        "nombre": "Argentina (Sel)",
+        "ataque": 94,
+        "mediocampo": 92,
+        "defensa": 91,
+        "forma": 1.0,
+        "elo": 1985,
+        "liga": "Internacional"
+    },
+    "francia": {
+        "nombre": "Francia (Sel)",
+        "ataque": 93,
+        "mediocampo": 91,
+        "defensa": 90,
+        "forma": 1.0,
+        "elo": 1980,
+        "liga": "Internacional"
+    },
+    "inglaterra": {
+        "nombre": "Inglaterra (Sel)",
+        "ataque": 90,
+        "mediocampo": 88,
+        "defensa": 87,
+        "forma": 1.0,
+        "elo": 1940,
+        "liga": "Internacional"
+    },
+    "brasil": {
+        "nombre": "Brasil (Sel)",
+        "ataque": 84,
+        "mediocampo": 82,
+        "defensa": 81,
+        "forma": 1.0,
+        "elo": 1880,
+        "liga": "Internacional"
+    },
+    "colombia": {
+        "nombre": "Colombia (Sel)",
+        "ataque": 78,
+        "mediocampo": 76,
+        "defensa": 75,
+        "forma": 1.0,
+        "elo": 1815,
+        "liga": "Internacional"
+    },
+    "uruguay": {
+        "nombre": "Uruguay (Sel)",
+        "ataque": 74,
+        "mediocampo": 72,
+        "defensa": 71,
+        "forma": 1.0,
+        "elo": 1775,
+        "liga": "Internacional"
+    },
+    "alemania": {
+        "nombre": "Alemania (Sel)",
+        "ataque": 80,
+        "mediocampo": 78,
+        "defensa": 77,
+        "forma": 1.0,
+        "elo": 1835,
+        "liga": "Internacional"
+    },
+    "portugal": {
+        "nombre": "Portugal (Sel)",
+        "ataque": 74,
+        "mediocampo": 72,
+        "defensa": 71,
+        "forma": 1.0,
+        "elo": 1770,
+        "liga": "Internacional"
+    },
+    "paises bajos": {
+        "nombre": "Paises Bajos (Sel)",
+        "ataque": 73,
+        "mediocampo": 71,
+        "defensa": 70,
+        "forma": 1.0,
+        "elo": 1765,
+        "liga": "Internacional"
+    },
+    "italia": {
+        "nombre": "Italia (Sel)",
+        "ataque": 68,
+        "mediocampo": 66,
+        "defensa": 65,
+        "forma": 1.0,
+        "elo": 1710,
+        "liga": "Internacional"
+    },
+    "croacia": {
+        "nombre": "Croacia (Sel)",
+        "ataque": 69,
+        "mediocampo": 67,
+        "defensa": 66,
+        "forma": 1.0,
+        "elo": 1720,
+        "liga": "Internacional"
+    },
+    "flamengo": {
+        "nombre": "Flamengo",
+        "ataque": 66,
+        "mediocampo": 66,
+        "defensa": 66,
+        "forma": 1.0,
+        "elo": 1714,
+        "liga": "CONMEBOL (América)"
+    },
+    "palmeiras": {
+        "nombre": "Palmeiras",
+        "ataque": 68,
+        "mediocampo": 68,
+        "defensa": 68,
+        "forma": 1.0,
+        "elo": 1741,
+        "liga": "CONMEBOL (América)"
+    },
+    "fluminense fc": {
+        "nombre": "Fluminense FC",
+        "ataque": 60,
+        "mediocampo": 60,
+        "defensa": 60,
+        "forma": 1.0,
+        "elo": 1650,
+        "liga": "CONMEBOL (América)"
+    },
+    "ldu de quito": {
+        "nombre": "LDU de Quito",
+        "ataque": 57,
+        "mediocampo": 57,
+        "defensa": 57,
+        "forma": 1.0,
+        "elo": 1624,
+        "liga": "CONMEBOL (América)"
+    },
+    "botafogo fr": {
+        "nombre": "Botafogo FR",
+        "ataque": 63,
+        "mediocampo": 63,
+        "defensa": 63,
+        "forma": 1.0,
+        "elo": 1683,
+        "liga": "CONMEBOL (América)"
+    },
+    "racing club": {
+        "nombre": "Racing Club",
+        "ataque": 66,
+        "mediocampo": 66,
+        "defensa": 66,
+        "forma": 1.0,
+        "elo": 1720,
+        "liga": "CONMEBOL (América)"
+    },
+    "mirassol futebol clube": {
+        "nombre": "Mirassol Futebol Clube",
+        "ataque": 41,
+        "mediocampo": 41,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1450,
+        "liga": "CONMEBOL (América)"
+    },
+    "boca juniors": {
+        "nombre": "Boca Juniors",
+        "ataque": 58,
+        "mediocampo": 58,
+        "defensa": 58,
+        "forma": 1.0,
+        "elo": 1633,
+        "liga": "CONMEBOL (América)"
+    },
+    "cruzeiro": {
+        "nombre": "Cruzeiro",
+        "ataque": 53,
+        "mediocampo": 53,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1581,
+        "liga": "CONMEBOL (América)"
+    },
+    "peñarol": {
+        "nombre": "Peñarol",
+        "ataque": 64,
+        "mediocampo": 64,
+        "defensa": 64,
+        "forma": 1.0,
+        "elo": 1695,
+        "liga": "CONMEBOL (América)"
+    },
+    "estudiantes de la plata": {
+        "nombre": "Estudiantes de la Plata",
+        "ataque": 55,
+        "mediocampo": 55,
+        "defensa": 55,
+        "forma": 1.0,
+        "elo": 1601,
+        "liga": "CONMEBOL (América)"
+    },
+    "bolívar": {
+        "nombre": "Bolívar",
+        "ataque": 58,
+        "mediocampo": 58,
+        "defensa": 58,
+        "forma": 1.0,
+        "elo": 1627,
+        "liga": "CONMEBOL (América)"
+    },
+    "tigre": {
+        "nombre": "Tigre",
+        "ataque": 52,
+        "mediocampo": 52,
+        "defensa": 52,
+        "forma": 1.0,
+        "elo": 1571,
+        "liga": "CONMEBOL (América)"
+    },
+    "independiente": {
+        "nombre": "Independiente",
+        "ataque": 57,
+        "mediocampo": 57,
+        "defensa": 57,
+        "forma": 1.0,
+        "elo": 1616,
+        "liga": "CONMEBOL (América)"
+    },
+    "são paulo": {
+        "nombre": "São Paulo",
+        "ataque": 62,
+        "mediocampo": 62,
+        "defensa": 62,
+        "forma": 1.0,
+        "elo": 1670,
+        "liga": "CONMEBOL (América)"
+    },
+    "lanús": {
+        "nombre": "Lanús",
+        "ataque": 48,
+        "mediocampo": 48,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1529,
+        "liga": "CONMEBOL (América)"
+    },
+    "bahia": {
+        "nombre": "Bahia",
+        "ataque": 53,
+        "mediocampo": 53,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1581,
+        "liga": "CONMEBOL (América)"
+    },
+    "rosario central": {
+        "nombre": "Rosario Central",
+        "ataque": 54,
+        "mediocampo": 54,
+        "defensa": 54,
+        "forma": 1.0,
+        "elo": 1587,
+        "liga": "CONMEBOL (América)"
+    },
+    "universitario de deportes": {
+        "nombre": "Universitario de Deportes",
+        "ataque": 53,
+        "mediocampo": 53,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1573,
+        "liga": "CONMEBOL (América)"
+    },
+    "corinthians": {
+        "nombre": "Corinthians",
+        "ataque": 67,
+        "mediocampo": 67,
+        "defensa": 67,
+        "forma": 1.0,
+        "elo": 1728,
+        "liga": "CONMEBOL (América)"
+    },
+    "argentinos juniors": {
+        "nombre": "Argentinos Juniors",
+        "ataque": 51,
+        "mediocampo": 51,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1553,
+        "liga": "CONMEBOL (América)"
+    },
+    "atlético nacional": {
+        "nombre": "Atlético Nacional",
+        "ataque": 53,
+        "mediocampo": 53,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1574,
+        "liga": "CONMEBOL (América)"
+    },
+    "grêmio": {
+        "nombre": "Grêmio",
+        "ataque": 55,
+        "mediocampo": 55,
+        "defensa": 55,
+        "forma": 1.0,
+        "elo": 1597,
+        "liga": "CONMEBOL (América)"
+    },
+    "atlético mineiro": {
+        "nombre": "Atlético Mineiro",
+        "ataque": 56,
+        "mediocampo": 56,
+        "defensa": 56,
+        "forma": 1.0,
+        "elo": 1607,
+        "liga": "CONMEBOL (América)"
+    },
+    "vélez sarsfield": {
+        "nombre": "Vélez Sarsfield",
+        "ataque": 48,
+        "mediocampo": 48,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1523,
+        "liga": "CONMEBOL (América)"
+    },
+    "river plate": {
+        "nombre": "River Plate",
+        "ataque": 64,
+        "mediocampo": 64,
+        "defensa": 64,
+        "forma": 1.0,
+        "elo": 1700,
+        "liga": "CONMEBOL (América)"
+    },
+    "tolima": {
+        "nombre": "Tolima",
+        "ataque": 51,
+        "mediocampo": 51,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1551,
+        "liga": "CONMEBOL (América)"
+    },
+    "fortaleza esporte clube": {
+        "nombre": "Fortaleza Esporte Clube",
+        "ataque": 61,
+        "mediocampo": 61,
+        "defensa": 61,
+        "forma": 1.0,
+        "elo": 1669,
+        "liga": "CONMEBOL (América)"
+    },
+    "vitória": {
+        "nombre": "Vitória",
+        "ataque": 53,
+        "mediocampo": 53,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1583,
+        "liga": "CONMEBOL (América)"
+    },
+    "san lorenzo de almagro": {
+        "nombre": "San Lorenzo de Almagro",
+        "ataque": 51,
+        "mediocampo": 51,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1551,
+        "liga": "CONMEBOL (América)"
+    },
+    "red bull bragantino sp": {
+        "nombre": "Red Bull Bragantino SP",
+        "ataque": 54,
+        "mediocampo": 54,
+        "defensa": 54,
+        "forma": 1.0,
+        "elo": 1591,
+        "liga": "CONMEBOL (América)"
+    },
+    "coquimbo unido": {
+        "nombre": "Coquimbo Unido",
+        "ataque": 41,
+        "mediocampo": 41,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1446,
+        "liga": "CONMEBOL (América)"
+    },
+    "atlético pr": {
+        "nombre": "Atlético PR",
+        "ataque": 51,
+        "mediocampo": 51,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1551,
+        "liga": "CONMEBOL (América)"
+    },
+    "santos fc": {
+        "nombre": "Santos FC",
+        "ataque": 47,
+        "mediocampo": 47,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1508,
+        "liga": "CONMEBOL (América)"
+    },
+    "independiente rivadavia": {
+        "nombre": "Independiente Rivadavia",
+        "ataque": 48,
+        "mediocampo": 48,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1522,
+        "liga": "CONMEBOL (América)"
+    },
+    "belgrano": {
+        "nombre": "Belgrano",
+        "ataque": 45,
+        "mediocampo": 45,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1489,
+        "liga": "CONMEBOL (América)"
+    },
+    "the strongest": {
+        "nombre": "The Strongest",
+        "ataque": 51,
+        "mediocampo": 51,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1553,
+        "liga": "CONMEBOL (América)"
+    },
+    "portuguesa": {
+        "nombre": "Portuguesa",
+        "ataque": 51,
+        "mediocampo": 51,
+        "defensa": 51,
+        "forma": 1.0,
+        "elo": 1554,
+        "liga": "CONMEBOL (América)"
+    },
+    "universidad católica": {
+        "nombre": "Universidad Católica",
+        "ataque": 50,
+        "mediocampo": 50,
+        "defensa": 50,
+        "forma": 1.0,
+        "elo": 1549,
+        "liga": "CONMEBOL (América)"
+    },
+    "barcelona sc": {
+        "nombre": "Barcelona SC",
+        "ataque": 52,
+        "mediocampo": 52,
+        "defensa": 52,
+        "forma": 1.0,
+        "elo": 1566,
+        "liga": "CONMEBOL (América)"
+    },
+    "alianza lima": {
+        "nombre": "Alianza Lima",
+        "ataque": 49,
+        "mediocampo": 49,
+        "defensa": 49,
+        "forma": 1.0,
+        "elo": 1534,
+        "liga": "CONMEBOL (América)"
+    },
+    "independiente medellín": {
+        "nombre": "Independiente Medellín",
+        "ataque": 52,
+        "mediocampo": 52,
+        "defensa": 52,
+        "forma": 1.0,
+        "elo": 1562,
+        "liga": "CONMEBOL (América)"
+    },
+    "sc internacional": {
+        "nombre": "SC Internacional",
+        "ataque": 66,
+        "mediocampo": 66,
+        "defensa": 66,
+        "forma": 1.0,
+        "elo": 1717,
+        "liga": "CONMEBOL (América)"
+    },
+    "junior fc": {
+        "nombre": "Junior FC",
+        "ataque": 44,
+        "mediocampo": 44,
+        "defensa": 44,
+        "forma": 1.0,
+        "elo": 1485,
+        "liga": "CONMEBOL (América)"
+    },
+    "américa de cali": {
+        "nombre": "América de Cali",
+        "ataque": 48,
+        "mediocampo": 48,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1528,
+        "liga": "CONMEBOL (América)"
+    },
+    "huracán": {
+        "nombre": "Huracán",
+        "ataque": 54,
+        "mediocampo": 54,
+        "defensa": 54,
+        "forma": 1.0,
+        "elo": 1584,
+        "liga": "CONMEBOL (América)"
+    },
+    "cerro porteño": {
+        "nombre": "Cerro Porteño",
+        "ataque": 45,
+        "mediocampo": 45,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1492,
+        "liga": "CONMEBOL (América)"
+    },
+    "always ready": {
+        "nombre": "Always Ready",
+        "ataque": 43,
+        "mediocampo": 43,
+        "defensa": 43,
+        "forma": 1.0,
+        "elo": 1467,
+        "liga": "CONMEBOL (América)"
+    },
+    "toluca fc": {
+        "nombre": "Toluca FC",
+        "ataque": 56,
+        "mediocampo": 56,
+        "defensa": 56,
+        "forma": 1.0,
+        "elo": 1606,
+        "liga": "CONCACAF (América)"
+    },
+    "cruz azul": {
+        "nombre": "Cruz Azul",
+        "ataque": 56,
+        "mediocampo": 56,
+        "defensa": 56,
+        "forma": 1.0,
+        "elo": 1608,
+        "liga": "CONCACAF (América)"
+    },
+    "américa": {
+        "nombre": "América",
+        "ataque": 62,
+        "mediocampo": 62,
+        "defensa": 62,
+        "forma": 1.0,
+        "elo": 1677,
+        "liga": "CONCACAF (América)"
+    },
+    "monterrey": {
+        "nombre": "Monterrey",
+        "ataque": 55,
+        "mediocampo": 55,
+        "defensa": 55,
+        "forma": 1.0,
+        "elo": 1596,
+        "liga": "CONCACAF (América)"
+    },
+    "tigres uanl": {
+        "nombre": "Tigres UANL",
+        "ataque": 54,
+        "mediocampo": 54,
+        "defensa": 54,
+        "forma": 1.0,
+        "elo": 1593,
+        "liga": "CONCACAF (América)"
+    },
+    "guadalajara": {
+        "nombre": "Guadalajara",
+        "ataque": 49,
+        "mediocampo": 49,
+        "defensa": 49,
+        "forma": 1.0,
+        "elo": 1530,
+        "liga": "CONCACAF (América)"
+    },
+    "olimpia": {
+        "nombre": "Olimpia",
+        "ataque": 53,
+        "mediocampo": 53,
+        "defensa": 53,
+        "forma": 1.0,
+        "elo": 1575,
+        "liga": "CONCACAF (América)"
+    },
+    "cf pachuca": {
+        "nombre": "CF Pachuca",
+        "ataque": 54,
+        "mediocampo": 54,
+        "defensa": 54,
+        "forma": 1.0,
+        "elo": 1585,
+        "liga": "CONCACAF (América)"
+    },
+    "los angeles fcunited states": {
+        "nombre": "Los Angeles FCUnited States",
+        "ataque": 43,
+        "mediocampo": 43,
+        "defensa": 43,
+        "forma": 1.0,
+        "elo": 1465,
+        "liga": "CONCACAF (América)"
+    },
+    "ld alajuelense": {
+        "nombre": "LD Alajuelense",
+        "ataque": 47,
+        "mediocampo": 47,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1513,
+        "liga": "CONCACAF (América)"
+    },
+    "deportivo saprissa": {
+        "nombre": "Deportivo Saprissa",
+        "ataque": 48,
+        "mediocampo": 48,
+        "defensa": 48,
+        "forma": 1.0,
+        "elo": 1522,
+        "liga": "CONCACAF (América)"
+    },
+    "csd municipal": {
+        "nombre": "CSD Municipal",
+        "ataque": 46,
+        "mediocampo": 46,
+        "defensa": 46,
+        "forma": 1.0,
+        "elo": 1497,
+        "liga": "CONCACAF (América)"
+    },
+    "inter miami cfunited states": {
+        "nombre": "Inter Miami CFUnited States",
+        "ataque": 39,
+        "mediocampo": 39,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1431,
+        "liga": "CONCACAF (América)"
+    },
+    "club tijuana": {
+        "nombre": "Club Tijuana",
+        "ataque": 40,
+        "mediocampo": 40,
+        "defensa": 40,
+        "forma": 1.0,
+        "elo": 1435,
+        "liga": "CONCACAF (América)"
+    },
+    "pumas unam": {
+        "nombre": "Pumas UNAM",
+        "ataque": 45,
+        "mediocampo": 45,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1492,
+        "liga": "CONCACAF (América)"
+    },
+    "monarcas morelia": {
+        "nombre": "Monarcas Morelia",
+        "ataque": 45,
+        "mediocampo": 45,
+        "defensa": 45,
+        "forma": 1.0,
+        "elo": 1488,
+        "liga": "CONCACAF (América)"
+    },
+    "club sport herediano": {
+        "nombre": "Club Sport Herediano",
+        "ataque": 46,
+        "mediocampo": 46,
+        "defensa": 46,
+        "forma": 1.0,
+        "elo": 1503,
+        "liga": "CONCACAF (América)"
+    },
+    "alianza fc": {
+        "nombre": "Alianza FC",
+        "ataque": 41,
+        "mediocampo": 41,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1452,
+        "liga": "CONCACAF (América)"
+    },
+    "vancouver whitecaps": {
+        "nombre": "Vancouver Whitecaps",
+        "ataque": 35,
+        "mediocampo": 35,
+        "defensa": 35,
+        "forma": 1.0,
+        "elo": 1386,
+        "liga": "CONCACAF (América)"
+    },
+    "philadelphia unionunited states": {
+        "nombre": "Philadelphia UnionUnited States",
+        "ataque": 40,
+        "mediocampo": 40,
+        "defensa": 40,
+        "forma": 1.0,
+        "elo": 1437,
+        "liga": "CONCACAF (América)"
+    },
+    "columbus crewunited states": {
+        "nombre": "Columbus CrewUnited States",
+        "ataque": 47,
+        "mediocampo": 47,
+        "defensa": 47,
+        "forma": 1.0,
+        "elo": 1517,
+        "liga": "CONCACAF (América)"
+    },
+    "marathón": {
+        "nombre": "Marathón",
+        "ataque": 38,
+        "mediocampo": 38,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1412,
+        "liga": "CONCACAF (América)"
+    },
+    "seattle sounders fcunited states": {
+        "nombre": "Seattle Sounders FCUnited States",
+        "ataque": 43,
+        "mediocampo": 43,
+        "defensa": 43,
+        "forma": 1.0,
+        "elo": 1471,
+        "liga": "CONCACAF (América)"
+    },
+    "necaxa": {
+        "nombre": "Necaxa",
+        "ataque": 43,
+        "mediocampo": 43,
+        "defensa": 43,
+        "forma": 1.0,
+        "elo": 1468,
+        "liga": "CONCACAF (América)"
+    },
+    "fc cincinnatiunited states": {
+        "nombre": "FC CincinnatiUnited States",
+        "ataque": 39,
+        "mediocampo": 39,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1427,
+        "liga": "CONCACAF (América)"
+    },
+    "motagua": {
+        "nombre": "Motagua",
+        "ataque": 41,
+        "mediocampo": 41,
+        "defensa": 41,
+        "forma": 1.0,
+        "elo": 1451,
+        "liga": "CONCACAF (América)"
+    },
+    "real estelínicaragua": {
+        "nombre": "Real EstelíNicaragua",
+        "ataque": 40,
+        "mediocampo": 40,
+        "defensa": 40,
+        "forma": 1.0,
+        "elo": 1435,
+        "liga": "CONCACAF (América)"
+    },
+    "atlético san luis": {
+        "nombre": "Atlético San Luis",
+        "ataque": 42,
+        "mediocampo": 42,
+        "defensa": 42,
+        "forma": 1.0,
+        "elo": 1464,
+        "liga": "CONCACAF (América)"
+    },
+    "diriangén fcnicaragua": {
+        "nombre": "Diriangén FCNicaragua",
+        "ataque": 40,
+        "mediocampo": 40,
+        "defensa": 40,
+        "forma": 1.0,
+        "elo": 1439,
+        "liga": "CONCACAF (América)"
+    },
+    "san diego fc": {
+        "nombre": "San Diego FC",
+        "ataque": 33,
+        "mediocampo": 33,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1361,
+        "liga": "CONCACAF (América)"
+    },
+    "antigua guatemala": {
+        "nombre": "Antigua Guatemala",
+        "ataque": 37,
+        "mediocampo": 37,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1409,
+        "liga": "CONCACAF (América)"
+    },
+    "mount pleasant fc": {
+        "nombre": "Mount Pleasant FC",
+        "ataque": 37,
+        "mediocampo": 37,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1406,
+        "liga": "CONCACAF (América)"
+    },
+    "atlas": {
+        "nombre": "Atlas",
+        "ataque": 38,
+        "mediocampo": 38,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1417,
+        "liga": "CONCACAF (América)"
+    },
+    "león": {
+        "nombre": "León",
+        "ataque": 50,
+        "mediocampo": 50,
+        "defensa": 50,
+        "forma": 1.0,
+        "elo": 1548,
+        "liga": "CONCACAF (América)"
+    },
+    "águila": {
+        "nombre": "Águila",
+        "ataque": 38,
+        "mediocampo": 38,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1420,
+        "liga": "CONCACAF (América)"
+    },
+    "new york city fcunited states": {
+        "nombre": "New York City FCUnited States",
+        "ataque": 36,
+        "mediocampo": 36,
+        "defensa": 36,
+        "forma": 1.0,
+        "elo": 1394,
+        "liga": "CONCACAF (América)"
+    },
+    "deportivo heredia": {
+        "nombre": "Deportivo Heredia",
+        "ataque": 38,
+        "mediocampo": 38,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1421,
+        "liga": "CONCACAF (América)"
+    },
+    "orlando cityunited states": {
+        "nombre": "Orlando CityUnited States",
+        "ataque": 39,
+        "mediocampo": 39,
+        "defensa": 39,
+        "forma": 1.0,
+        "elo": 1423,
+        "liga": "CONCACAF (América)"
+    },
+    "fc juárez": {
+        "nombre": "FC Juárez",
+        "ataque": 37,
+        "mediocampo": 37,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1406,
+        "liga": "CONCACAF (América)"
+    },
+    "real españa": {
+        "nombre": "Real España",
+        "ataque": 37,
+        "mediocampo": 37,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1402,
+        "liga": "CONCACAF (América)"
+    },
+    "cartaginés": {
+        "nombre": "Cartaginés",
+        "ataque": 33,
+        "mediocampo": 33,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1367,
+        "liga": "CONCACAF (América)"
+    },
+    "river plate prpuerto rico": {
+        "nombre": "River Plate PRPuerto Rico",
+        "ataque": 37,
+        "mediocampo": 37,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1405,
+        "liga": "CONCACAF (América)"
+    },
+    "defence force fctrinidad and tobago": {
+        "nombre": "Defence Force FCTrinidad and Tobago",
+        "ataque": 37,
+        "mediocampo": 37,
+        "defensa": 37,
+        "forma": 1.0,
+        "elo": 1404,
+        "liga": "CONCACAF (América)"
+    },
+    "querétaro": {
+        "nombre": "Querétaro",
+        "ataque": 35,
+        "mediocampo": 35,
+        "defensa": 35,
+        "forma": 1.0,
+        "elo": 1383,
+        "liga": "CONCACAF (América)"
+    },
+    "cd plaza amador": {
+        "nombre": "CD Plaza Amador",
+        "ataque": 33,
+        "mediocampo": 33,
+        "defensa": 33,
+        "forma": 1.0,
+        "elo": 1363,
+        "liga": "CONCACAF (América)"
+    },
+    "minnesota unitedunited states": {
+        "nombre": "Minnesota UnitedUnited States",
+        "ataque": 34,
+        "mediocampo": 34,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1372,
+        "liga": "CONCACAF (América)"
+    },
+    "l.a. firpo": {
+        "nombre": "L.A. Firpo",
+        "ataque": 32,
+        "mediocampo": 32,
+        "defensa": 32,
+        "forma": 1.0,
+        "elo": 1348,
+        "liga": "CONCACAF (América)"
+    },
+    "xelajú": {
+        "nombre": "Xelajú",
+        "ataque": 38,
+        "mediocampo": 38,
+        "defensa": 38,
+        "forma": 1.0,
+        "elo": 1419,
+        "liga": "CONCACAF (América)"
+    },
+    "nashville scunited states": {
+        "nombre": "Nashville SCUnited States",
+        "ataque": 32,
+        "mediocampo": 32,
+        "defensa": 32,
+        "forma": 1.0,
+        "elo": 1348,
+        "liga": "CONCACAF (América)"
+    },
+    "charlotte fc": {
+        "nombre": "Charlotte FC",
+        "ataque": 34,
+        "mediocampo": 34,
+        "defensa": 34,
+        "forma": 1.0,
+        "elo": 1377,
+        "liga": "CONCACAF (América)"
+    }
+}

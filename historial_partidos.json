@@ -1,0 +1,1154 @@
+[
+    {
+        "local": "Sunderland",
+        "visitante": "Liverpool",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Benfica",
+        "visitante": "Real Madrid",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Galatasaray",
+        "visitante": "Juventus",
+        "goles_local": 5,
+        "goles_visitante": 2,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Monaco",
+        "visitante": "PSG",
+        "goles_local": 2,
+        "goles_visitante": 3,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Dortmund",
+        "visitante": "Atalanta",
+        "goles_local": 2,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Qarabag",
+        "visitante": "Newcastle",
+        "goles_local": 1,
+        "goles_visitante": 6,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Olympiacos",
+        "visitante": "Leverkusen",
+        "goles_local": 0,
+        "goles_visitante": 2,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Brujas",
+        "visitante": "Atletico Madrid",
+        "goles_local": 3,
+        "goles_visitante": 3,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Levante",
+        "visitante": "Villarreal",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "PAOK",
+        "visitante": "Celta Vigo",
+        "goles_local": 1,
+        "goles_visitante": 2,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Fenerbahce",
+        "visitante": "Nottingham Forest",
+        "goles_local": 0,
+        "goles_visitante": 3,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Dinamo Zagreb",
+        "visitante": "Genk",
+        "goles_local": 1,
+        "goles_visitante": 3,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Brann",
+        "visitante": "Bologna",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Panathinaikos",
+        "visitante": "Viktoria Plzen",
+        "goles_local": 2,
+        "goles_visitante": 2,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": true
+    },
+    {
+        "local": "Celtic",
+        "visitante": "Stuttgart",
+        "goles_local": 1,
+        "goles_visitante": 4,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Jagiellonia",
+        "visitante": "Fiorentina",
+        "goles_local": 0,
+        "goles_visitante": 3,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Athletic Bilbao",
+        "visitante": "Elche",
+        "goles_local": 2,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Sassuolo",
+        "visitante": "Hellas Verona",
+        "goles_local": 3,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Brest",
+        "visitante": "Olympique Marsella",
+        "goles_local": 2,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Mainz",
+        "visitante": "Hamburg",
+        "goles_local": 0,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Brentford",
+        "visitante": "Brighton",
+        "goles_local": 0,
+        "goles_visitante": 2,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Chelsea",
+        "visitante": "Burnley",
+        "goles_local": 1,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Aston Villa",
+        "visitante": "Leeds",
+        "goles_local": 1,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "West Ham",
+        "visitante": "Bournemouth",
+        "goles_local": 0,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Manchester City",
+        "visitante": "Newcastle",
+        "goles_local": 2,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Real Sociedad",
+        "visitante": "Real Oviedo",
+        "goles_local": 3,
+        "goles_visitante": 3,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Real Betis",
+        "visitante": "Rayo Vallecano",
+        "goles_local": 1,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Osasuna",
+        "visitante": "Real Madrid",
+        "goles_local": 2,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Atlético Madrid",
+        "visitante": "Espanyol",
+        "goles_local": 4,
+        "goles_visitante": 2,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Juventus",
+        "visitante": "Como",
+        "goles_local": 0,
+        "goles_visitante": 2,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Lecce",
+        "visitante": "Inter",
+        "goles_local": 0,
+        "goles_visitante": 2,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Cagliari",
+        "visitante": "Lazio",
+        "goles_local": 0,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Lens",
+        "visitante": "Monaco",
+        "goles_local": 2,
+        "goles_visitante": 3,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "PSG",
+        "visitante": "Metz",
+        "goles_local": 3,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Koln",
+        "visitante": "Hoffenheim",
+        "goles_local": 2,
+        "goles_visitante": 2,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Union Berlin",
+        "visitante": "Leverkusen",
+        "goles_local": 1,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Wolfsburg",
+        "visitante": "Augsburg",
+        "goles_local": 2,
+        "goles_visitante": 3,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Bayern",
+        "visitante": "Frankfurt",
+        "goles_local": 3,
+        "goles_visitante": 2,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Leipzig",
+        "visitante": "Dortmund",
+        "goles_local": 2,
+        "goles_visitante": 2,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Moreirense",
+        "visitante": "Sporting",
+        "goles_local": 0,
+        "goles_visitante": 3,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "SC Braga",
+        "visitante": "Guimaraes",
+        "goles_local": 3,
+        "goles_visitante": 2,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Nottingham",
+        "visitante": "Liverpool",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Crystal Palace",
+        "visitante": "Wolves",
+        "goles_local": 1,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Sunderland",
+        "visitante": "Fulham",
+        "goles_local": 1,
+        "goles_visitante": 3,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Tottenham",
+        "visitante": "Arsenal",
+        "goles_local": 1,
+        "goles_visitante": 4,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Getafe",
+        "visitante": "Sevilla",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Barcelona",
+        "visitante": "Levante",
+        "goles_local": 3,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Villarreal",
+        "visitante": "Valencia",
+        "goles_local": 2,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Genoa",
+        "visitante": "Torino",
+        "goles_local": 3,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Atalanta",
+        "visitante": "Napoli",
+        "goles_local": 2,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Milan",
+        "visitante": "Parma",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Roma",
+        "visitante": "Cremonese",
+        "goles_local": 3,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Auxerre",
+        "visitante": "Rennes",
+        "goles_local": 0,
+        "goles_visitante": 3,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Angers",
+        "visitante": "Lille",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Niza",
+        "visitante": "Lorient",
+        "goles_local": 3,
+        "goles_visitante": 3,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": true
+    },
+    {
+        "local": "Estrasburgo",
+        "visitante": "Lyon",
+        "goles_local": 3,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Friburgo",
+        "visitante": "Monchengladbach",
+        "goles_local": 2,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "St. Pauli",
+        "visitante": "Werder Bremen",
+        "goles_local": 2,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Heidenheim",
+        "visitante": "Stuttgart",
+        "goles_local": 3,
+        "goles_visitante": 3,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Porto",
+        "visitante": "Rio Ave",
+        "goles_local": 1,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Everton",
+        "visitante": "Manchester United",
+        "goles_local": 1,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Alavés",
+        "visitante": "Girona",
+        "goles_local": 2,
+        "goles_visitante": 2,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Fiorentina",
+        "visitante": "Pisa",
+        "goles_local": 1,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Bologna",
+        "visitante": "Udinese",
+        "goles_local": 1,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Atletico Madrid",
+        "visitante": "Brujas",
+        "goles_local": 4,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Leverkusen",
+        "visitante": "Olympiakos",
+        "goles_local": 0,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Newcastle",
+        "visitante": "Qarabag",
+        "goles_local": 3,
+        "goles_visitante": 2,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Inter",
+        "visitante": "Bodo Glimt",
+        "goles_local": 1,
+        "goles_visitante": 2,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Atalanta",
+        "visitante": "Dortmund",
+        "goles_local": 4,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Juventus",
+        "visitante": "Galatasaray",
+        "goles_local": 3,
+        "goles_visitante": 2,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "PSG",
+        "visitante": "Monaco",
+        "goles_local": 2,
+        "goles_visitante": 2,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Real Madrid",
+        "visitante": "Benfica",
+        "goles_local": 2,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Viktoria Plzen",
+        "visitante": "Panathinaikos",
+        "goles_local": 1,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Stuttgart",
+        "visitante": "Celtic",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Celta",
+        "visitante": "PAOK",
+        "goles_local": 1,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Nottingham Forest",
+        "visitante": "Fenerbahce",
+        "goles_local": 1,
+        "goles_visitante": 2,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Genk",
+        "visitante": "Dinamo Zagreb",
+        "goles_local": 3,
+        "goles_visitante": 3,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Bologna",
+        "visitante": "Brann",
+        "goles_local": 1,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Wolves",
+        "visitante": "Aston Villa",
+        "goles_local": 2,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Levante",
+        "visitante": "Alaves",
+        "goles_local": 2,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Parma",
+        "visitante": "Cagliari",
+        "goles_local": 1,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Estrasburgo",
+        "visitante": "Lens",
+        "goles_local": 1,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Augsburg",
+        "visitante": "Koln",
+        "goles_local": 2,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Porto",
+        "visitante": "Arouca",
+        "goles_local": 3,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Sporting",
+        "visitante": "Estoril",
+        "goles_local": 3,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Bournemouth",
+        "visitante": "Sunderland",
+        "goles_local": 1,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Newcastle",
+        "visitante": "Everton",
+        "goles_local": 2,
+        "goles_visitante": 3,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Liverpool",
+        "visitante": "West Ham",
+        "goles_local": 5,
+        "goles_visitante": 2,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Burnley",
+        "visitante": "Brentford",
+        "goles_local": 3,
+        "goles_visitante": 4,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Leeds",
+        "visitante": "Manchester City",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Rayo Vallecano",
+        "visitante": "Athletic Bilbao",
+        "goles_local": 0,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Barcelona",
+        "visitante": "Villarreal",
+        "goles_local": 4,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Mallorca",
+        "visitante": "Real Sociedad",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Real Oviedo",
+        "visitante": "Atletico Madrid",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Como",
+        "visitante": "Lecce",
+        "goles_local": 3,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Hellas Verona",
+        "visitante": "Napoli",
+        "goles_local": 1,
+        "goles_visitante": 2,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Inter",
+        "visitante": "Genoa",
+        "goles_local": 2,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Rennes",
+        "visitante": "Toulouse",
+        "goles_local": 1,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Monaco",
+        "visitante": "Angers",
+        "goles_local": 2,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Le Havre",
+        "visitante": "PSG",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Werder Bremen",
+        "visitante": "Heidenheim",
+        "goles_local": 2,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Leverkusen",
+        "visitante": "Mainz",
+        "goles_local": 1,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Hoffenheim",
+        "visitante": "St. Pauli",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Monchengladbach",
+        "visitante": "Union Berlin",
+        "goles_local": 1,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Dortmund",
+        "visitante": "Bayern",
+        "goles_local": 2,
+        "goles_visitante": 3,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Man United",
+        "visitante": "Crystal Palace",
+        "goles_local": 2,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Fulham",
+        "visitante": "Tottenham",
+        "goles_local": 2,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Brighton",
+        "visitante": "Forest",
+        "goles_local": 2,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Arsenal",
+        "visitante": "Chelsea",
+        "goles_local": 2,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Elche",
+        "visitante": "Espanyol",
+        "goles_local": 2,
+        "goles_visitante": 2,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Valencia",
+        "visitante": "Osasuna",
+        "goles_local": 1,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Cremonese",
+        "visitante": "Milan",
+        "goles_local": 0,
+        "goles_visitante": 2,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Sassuolo",
+        "visitante": "Atalanta",
+        "goles_local": 2,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Torino",
+        "visitante": "Lazio",
+        "goles_local": 2,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Paris FC",
+        "visitante": "Nice",
+        "goles_local": 1,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Metz",
+        "visitante": "Brest",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Lille",
+        "visitante": "Nantes",
+        "goles_local": 1,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Lorient",
+        "visitante": "Auxerre",
+        "goles_local": 2,
+        "goles_visitante": 2,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Stuttgart",
+        "visitante": "Wolfsburg",
+        "goles_local": 4,
+        "goles_visitante": 0,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Frankfurt",
+        "visitante": "Freiburg",
+        "goles_local": 2,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Betis",
+        "visitante": "Sevilla",
+        "goles_local": 2,
+        "goles_visitante": 2,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Girona",
+        "visitante": "Celta",
+        "goles_local": 1,
+        "goles_visitante": 2,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Roma",
+        "visitante": "Juventus",
+        "goles_local": 3,
+        "goles_visitante": 3,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Hamburg",
+        "visitante": "RB Leipzig",
+        "goles_local": 1,
+        "goles_visitante": 2,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Real Madrid",
+        "visitante": "Getafe",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Pisa",
+        "visitante": "Bologna",
+        "goles_local": 0,
+        "goles_visitante": 1,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": true,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Udinese",
+        "visitante": "Fiorentina",
+        "goles_local": 3,
+        "goles_visitante": 0,
+        "acierto_ganador": false,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    },
+    {
+        "local": "Gil Vicente",
+        "visitante": "Benfica",
+        "goles_local": 1,
+        "goles_visitante": 2,
+        "acierto_ganador": true,
+        "acierto_resultado_exacto": false,
+        "acierto_tendencia": false
+    }
+]
