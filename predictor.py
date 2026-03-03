@@ -144,6 +144,326 @@ MANUAL_TEAM_STATUS = {
     # "real madrid": {"injuries_impact": 0.08}
 }
 
+# Cada módulo es independiente y puede activarse/desactivarse para testear su impacto.
+MODULE_FLAGS = {
+    "league_calibration": True,
+    "overperformance_detector": True,
+    "fatigue_schedule": True,
+    "draw_calibration": True,
+    "favorite_fragility": True,
+    "matchup_style": True,
+    "context_motivation": True,
+    "early_impact": True,
+    "market_gap": True,
+    "dynamic_confidence": True,
+}
+
+DEFAULT_LEAGUE_PROFILE = {
+    "draw_rate": 0.27,
+    "goal_variance": 1.35,
+    "home_advantage": FACTOR_LOCALIA,
+    "xg_mean": 1.30,
+}
+
+LEAGUE_CALIBRATION = {}
+TEAM_MATCH_CACHE = {}
+
+
+COMPETITION_LEAGUE_HINTS = {
+    "premier": "premier_league",
+    "eng (europa)": "premier_league",
+    "bundesliga": "bundesliga",
+    "ger (europa)": "bundesliga",
+    "ligue 1": "ligue_1",
+    "fra (europa)": "ligue_1",
+}
+
+
+def modulo_activo(nombre):
+    return MODULE_FLAGS.get(nombre, False)
+
+
+def identificar_liga(equipo_local, equipo_visitante=None):
+    claves = []
+    for equipo in [equipo_local, equipo_visitante]:
+        if not equipo:
+            continue
+        liga = str(equipo.get("liga", "")).lower()
+        claves.append(liga)
+
+    for liga in claves:
+        for hint, canonical in COMPETITION_LEAGUE_HINTS.items():
+            if hint in liga:
+                return canonical
+    return "default"
+
+
+def _extraer_xg_texto(texto):
+    patron = re.search(r"xg\s*[:=]?\s*(\d+[\.,]?\d*)\s*[-:]\s*(\d+[\.,]?\d*)", texto, flags=re.I)
+    if not patron:
+        return None, None
+    return float(patron.group(1).replace(",", ".")), float(patron.group(2).replace(",", "."))
+
+
+def _team_recent_matches(equipo, limit=12):
+    nombre = equipo["nombre"]
+    if nombre in TEAM_MATCH_CACHE:
+        return TEAM_MATCH_CACHE[nombre][:limit]
+    try:
+        partidos = _parsear_partidos_besoccer(nombre)
+    except Exception:
+        partidos = []
+
+    objetivo = normalizar_nombre(nombre)
+    data = []
+    for p in partidos:
+        is_home = normalizar_nombre(p["home"]) == objetivo
+        is_away = normalizar_nombre(p["away"]) == objetivo
+        if not (is_home or is_away):
+            continue
+
+        gf, ga = (p["gh"], p["ga"]) if is_home else (p["ga"], p["gh"])
+        xg_h, xg_a = _extraer_xg_texto(p.get("competition", ""))
+        xg_for = None
+        xga = None
+        if xg_h is not None and xg_a is not None:
+            xg_for, xga = (xg_h, xg_a) if is_home else (xg_a, xg_h)
+
+        data.append({
+            "gf": gf,
+            "ga": ga,
+            "xg_for": xg_for,
+            "xga": xga,
+            "datetime": p.get("datetime"),
+            "competition": p.get("competition", ""),
+            "is_home": is_home,
+        })
+
+    TEAM_MATCH_CACHE[nombre] = data
+    return data[:limit]
+
+
+def calibrar_ligas(db):
+    league_buckets = {"premier_league": [], "bundesliga": [], "ligue_1": []}
+    for equipo in db.values():
+        key = identificar_liga(equipo)
+        if key in league_buckets:
+            league_buckets[key].append(equipo)
+
+    output = {}
+    for league_key, equipos in league_buckets.items():
+        goles_totales, total_matches = [], 0
+        draw_count, home_wins = 0, 0
+        xg_vals = []
+        for equipo in equipos[:8]:
+            for m in _team_recent_matches(equipo, limit=10):
+                if not m["is_home"]:
+                    continue
+                total_matches += 1
+                goles_totales.append(m["gf"] + m["ga"])
+                if m["gf"] == m["ga"]:
+                    draw_count += 1
+                if m["gf"] > m["ga"]:
+                    home_wins += 1
+                if m["xg_for"] is not None:
+                    xg_vals.append(m["xg_for"])
+
+        if total_matches < 8:
+            output[league_key] = DEFAULT_LEAGUE_PROFILE.copy()
+            continue
+
+        mean_goals = sum(goles_totales) / len(goles_totales)
+        variance = sum((g - mean_goals) ** 2 for g in goles_totales) / max(1, len(goles_totales))
+        output[league_key] = {
+            "draw_rate": max(0.18, min(0.40, draw_count / total_matches)),
+            "goal_variance": max(0.9, min(2.2, variance)),
+            "home_advantage": max(1.05, min(1.25, 1.0 + ((home_wins / total_matches) - 0.40) * 0.35)),
+            "xg_mean": max(0.9, min(2.0, (sum(xg_vals) / len(xg_vals)) if xg_vals else DEFAULT_LEAGUE_PROFILE["xg_mean"])),
+        }
+
+    output["default"] = DEFAULT_LEAGUE_PROFILE.copy()
+    return output
+
+
+def perfil_liga(local, visita):
+    if not modulo_activo("league_calibration"):
+        return DEFAULT_LEAGUE_PROFILE.copy(), "default"
+    league_key = identificar_liga(local, visita)
+    return LEAGUE_CALIBRATION.get(league_key, DEFAULT_LEAGUE_PROFILE.copy()), league_key
+
+
+def calcular_opi(equipo):
+    if not modulo_activo("overperformance_detector"):
+        return {"opi": 0.0, "alerta": False, "factor": 1.0}
+
+    muestra = _team_recent_matches(equipo, limit=10)
+    if not muestra:
+        return {"opi": 0.0, "alerta": False, "factor": 1.0}
+
+    gf = sum(x["gf"] for x in muestra)
+    ga = sum(x["ga"] for x in muestra)
+    xg_for_vals = [x["xg_for"] for x in muestra if x["xg_for"] is not None]
+    xga_vals = [x["xga"] for x in muestra if x["xga"] is not None]
+    xg_for = sum(xg_for_vals) if xg_for_vals else gf
+    xga = sum(xga_vals) if xga_vals else ga
+
+    opi_attack = (gf - xg_for) / max(1.0, len(muestra))
+    opi_def = (xga - ga) / max(1.0, len(muestra))
+    opi = max(-1.5, min(1.5, (opi_attack + opi_def) / 2))
+    penal = max(0.0, opi) * 0.035
+    factor = max(0.94, min(1.01, 1.0 - penal))
+
+    return {"opi": opi, "alerta": opi > 0.30, "factor": factor}
+
+
+def calcular_fatigue_index(carga):
+    if not modulo_activo("fatigue_schedule"):
+        return {"fi": 0.0, "factor": 1.0}
+    fi = 0.0
+    fi += min(0.55, carga["partidos_14d"] * 0.11)
+    if carga["dias_descanso"] <= 3:
+        fi += 0.2
+    if carga["jugo_internacional"]:
+        fi += 0.18
+    if carga["extra_time_reciente"]:
+        fi += 0.12
+    fi = min(1.0, fi)
+    factor = max(0.92, min(1.02, 1.0 - (fi * 0.05)))
+    return {"fi": fi, "factor": factor}
+
+
+def calcular_draw_likelihood_score(local, visita, contexto):
+    if not modulo_activo("draw_calibration"):
+        return {"dls": 0, "factores": 0, "boost": 0.0}
+
+    factores = 0
+    off_balance = abs((local["ataque"] + local["mediocampo"]) - (visita["ataque"] + visita["mediocampo"]))
+    if off_balance <= 8:
+        factores += 1
+
+    xg_diff = abs(contexto["xg_base_local"] - contexto["xg_base_visitante"])
+    if xg_diff <= 0.22:
+        factores += 1
+
+    under_tend = contexto["xg_base_local"] + contexto["xg_base_visitante"] <= 2.55
+    if under_tend:
+        factores += 1
+
+    quality_gap = abs(local["elo"] - visita["elo"])
+    if quality_gap <= 60:
+        factores += 1
+
+    pace = (local["ataque"] + visita["ataque"]) / 2
+    if pace <= 83:
+        factores += 1
+
+    dls = factores / 5
+    boost = 0.0
+    if factores >= 3:
+        boost = min(0.055, 0.018 + (factores - 3) * 0.012)
+    return {"dls": dls, "factores": factores, "boost": boost}
+
+
+def calcular_fragility_index(favorito):
+    if not modulo_activo("favorite_fragility"):
+        return {"ffi": 0.0, "factor": 1.0, "alerta": False}
+
+    muestra = _team_recent_matches(favorito, limit=12)
+    if not muestra:
+        return {"ffi": 0.0, "factor": 1.0, "alerta": False}
+
+    min_margin_wins = sum(1 for m in muestra if m["gf"] > m["ga"] and (m["gf"] - m["ga"]) == 1)
+    xga_high = sum(1 for m in muestra if (m["xga"] or m["ga"]) >= 1.5)
+    conceded = sum(m["ga"] for m in muestra) / len(muestra)
+
+    ffi = (min_margin_wins / len(muestra)) * 0.45 + (xga_high / len(muestra)) * 0.35 + min(0.2, conceded / 10)
+    ffi = min(1.0, ffi)
+    factor = max(0.93, min(1.0, 1 - ffi * 0.06))
+    return {"ffi": ffi, "factor": factor, "alerta": ffi > 0.55}
+
+
+def calcular_matchup_style_factor(local, visita):
+    if not modulo_activo("matchup_style"):
+        return {"msf_local": 1.0, "msf_visitante": 1.0, "perfil": "neutral"}
+
+    local_style = "defensivo" if local["defensa"] - local["ataque"] >= 8 else "propositivo"
+    visita_style = "defensivo" if visita["defensa"] - visita["ataque"] >= 8 else "propositivo"
+
+    if local_style == "propositivo" and visita_style == "defensivo":
+        return {"msf_local": 0.985, "msf_visitante": 1.01, "perfil": "bloque_bajo_vs_posesion"}
+    if local_style == "defensivo" and visita_style == "propositivo":
+        return {"msf_local": 1.01, "msf_visitante": 0.985, "perfil": "contraataque"}
+    return {"msf_local": 1.0, "msf_visitante": 1.0, "perfil": "parejo"}
+
+
+def calcular_context_motivation_index(local, visita, contexto):
+    if not modulo_activo("context_motivation"):
+        return {"cmi_local": 1.0, "cmi_visitante": 1.0}
+
+    cmi_local, cmi_visitante = 1.0, 1.0
+    if contexto["carga_local"]["jugo_internacional"] and contexto["carga_local"]["dias_descanso"] <= 3:
+        cmi_local -= 0.01
+    if contexto["carga_visitante"]["jugo_internacional"] and contexto["carga_visitante"]["dias_descanso"] <= 3:
+        cmi_visitante -= 0.01
+
+    if abs(local["elo"] - visita["elo"]) > 180:
+        if local["elo"] > visita["elo"]:
+            cmi_local -= 0.004
+            cmi_visitante += 0.004
+        else:
+            cmi_visitante -= 0.004
+            cmi_local += 0.004
+
+    return {"cmi_local": max(0.97, cmi_local), "cmi_visitante": max(0.97, cmi_visitante)}
+
+
+def calcular_early_impact_index(local, visita):
+    if not modulo_activo("early_impact"):
+        return {"eii_local": 1.0, "eii_visitante": 1.0}
+
+    momentum_local = (local["ataque"] + local["forma"] * 35) / max(1, local["defensa"])
+    momentum_visit = (visita["ataque"] + visita["forma"] * 35) / max(1, visita["defensa"])
+    diff = max(-0.08, min(0.08, (momentum_local - momentum_visit) * 0.03))
+    return {"eii_local": 1 + diff, "eii_visitante": 1 - diff}
+
+
+def calcular_market_gap(local, visita, probs):
+    if not modulo_activo("market_gap"):
+        return {"mmg": 0.0, "alerta": False}
+
+    odds_l = local.get("odds_win")
+    odds_v = visita.get("odds_win")
+    if not odds_l or not odds_v:
+        return {"mmg": 0.0, "alerta": False}
+
+    market_home = 1 / odds_l
+    model_home = probs["L"]
+    mmg = abs(market_home - model_home)
+    return {"mmg": mmg, "alerta": mmg >= 0.12}
+
+
+def clasificar_confianza(probs, contexto):
+    if not modulo_activo("dynamic_confidence"):
+        return {"nivel": "media", "score": 0.5}
+
+    top = max(probs.values())
+    second = sorted(probs.values(), reverse=True)[1]
+    spread = top - second
+    contradiccion = 0.0
+    contradiccion += max(0, contexto["opi_local"]["opi"]) * 0.08
+    contradiccion += max(0, contexto["opi_visitante"]["opi"]) * 0.08
+    contradiccion += contexto["fragility"]["ffi"] * 0.1
+    contradiccion = min(0.4, contradiccion)
+
+    score = max(0.0, min(1.0, (spread * 2.1) + 0.35 - contradiccion))
+    if score >= 0.66:
+        nivel = "alta"
+    elif score >= 0.45:
+        nivel = "media"
+    else:
+        nivel = "baja"
+    return {"nivel": nivel, "score": score}
+
 
 def cargar_db():
     if not os.path.exists("equipos.json"):
@@ -519,18 +839,45 @@ def construir_contexto_partido(local, visita, db):
     diff_descanso = carga_local["dias_descanso"] - carga_visitante["dias_descanso"]
     ajuste_descanso_local = max(0.97, min(1.03, 1 + (diff_descanso * 0.004)))
 
-    return {
+    league_profile, league_key = perfil_liga(local, visita)
+    fatigue_local = calcular_fatigue_index(carga_local)
+    fatigue_visitante = calcular_fatigue_index(carga_visitante)
+    opi_local = calcular_opi(local)
+    opi_visitante = calcular_opi(visita)
+    style_factor = calcular_matchup_style_factor(local, visita)
+    early_impact = calcular_early_impact_index(local, visita)
+
+    xg_base_local = ((local["ataque"] * 0.6 + local["mediocampo"] * 0.4) / 100) * league_profile["xg_mean"]
+    xg_base_visitante = ((visita["ataque"] * 0.6 + visita["mediocampo"] * 0.4) / 100) * league_profile["xg_mean"]
+
+    contexto = {
+        "league_key": league_key,
+        "league_profile": league_profile,
         "invicto_local": invicto_local,
         "boost_fortin": calcular_boost_fortin(invicto_local),
         "forma_local": forma_local,
         "forma_visitante": forma_visitante,
         "carga_local": carga_local,
         "carga_visitante": carga_visitante,
+        "fatigue_local": fatigue_local,
+        "fatigue_visitante": fatigue_visitante,
+        "opi_local": opi_local,
+        "opi_visitante": opi_visitante,
+        "style_factor": style_factor,
+        "early_impact": early_impact,
+        "xg_base_local": xg_base_local,
+        "xg_base_visitante": xg_base_visitante,
         "ajuste_lesiones_local": calcular_ajuste_lesiones(local),
         "ajuste_lesiones_visitante": calcular_ajuste_lesiones(visita),
         "ajuste_descanso_local": ajuste_descanso_local,
         "ajuste_descanso_visitante": 2 - ajuste_descanso_local,
     }
+    contexto["draw_module"] = calcular_draw_likelihood_score(local, visita, contexto)
+
+    favorito = local if local["elo"] >= visita["elo"] else visita
+    contexto["fragility"] = calcular_fragility_index(favorito)
+    contexto["motivation"] = calcular_context_motivation_index(local, visita, contexto)
+    return contexto
 
 
 def ejecutar_simulacion(local, visita, sims, contexto):
@@ -540,10 +887,11 @@ def ejecutar_simulacion(local, visita, sims, contexto):
     influencia_med = 1 + (dif_med * 0.008)
 
     bono_mem_l, bono_mem_v, vl, vv, e = calcular_memoria_historica(local["nombre"], visita["nombre"])
+    league_home_adv = contexto["league_profile"]["home_advantage"] if modulo_activo("league_calibration") else FACTOR_LOCALIA
 
     lambda_L = (
         ((local["ataque"] * 0.6 + local["mediocampo"] * 0.4) / (visita["defensa"] * 0.8 + 20))
-        * FACTOR_LOCALIA
+        * league_home_adv
         * local["forma"]
         * bono_jerarquia
         * influencia_med
@@ -551,6 +899,11 @@ def ejecutar_simulacion(local, visita, sims, contexto):
         * bono_mem_l
         * contexto["forma_local"]["factor"]
         * contexto["carga_local"]["factor_carga"]
+        * contexto["fatigue_local"]["factor"]
+        * contexto["opi_local"]["factor"]
+        * contexto["style_factor"]["msf_local"]
+        * contexto["motivation"]["cmi_local"]
+        * contexto["early_impact"]["eii_local"]
         * contexto["ajuste_descanso_local"]
         * contexto["ajuste_lesiones_local"]
     )
@@ -563,9 +916,21 @@ def ejecutar_simulacion(local, visita, sims, contexto):
         * bono_mem_v
         * contexto["forma_visitante"]["factor"]
         * contexto["carga_visitante"]["factor_carga"]
+        * contexto["fatigue_visitante"]["factor"]
+        * contexto["opi_visitante"]["factor"]
+        * contexto["style_factor"]["msf_visitante"]
+        * contexto["motivation"]["cmi_visitante"]
+        * contexto["early_impact"]["eii_visitante"]
         * contexto["ajuste_descanso_visitante"]
         * contexto["ajuste_lesiones_visitante"]
     )
+
+    favorito = "L" if local["elo"] >= visita["elo"] else "V"
+    if modulo_activo("favorite_fragility") and contexto["fragility"]["ffi"] > 0:
+        if favorito == "L":
+            lambda_L *= contexto["fragility"]["factor"]
+        else:
+            lambda_V *= contexto["fragility"]["factor"]
 
     res = {"L": 0, "E": 0, "V": 0}
     total_goles = 0
@@ -582,7 +947,21 @@ def ejecutar_simulacion(local, visita, sims, contexto):
         else:
             res["V"] += 1
 
+    probs = {k: v / sims for k, v in res.items()}
+    draw_boost = contexto["draw_module"]["boost"]
+    if draw_boost > 0:
+        probs["E"] = min(0.60, probs["E"] + draw_boost)
+        squeeze = draw_boost / 2
+        probs["L"] = max(0.01, probs["L"] - squeeze)
+        probs["V"] = max(0.01, probs["V"] - squeeze)
+        total = sum(probs.values())
+        probs = {k: v / total for k, v in probs.items()}
+        res = {k: int(round(v * sims)) for k, v in probs.items()}
+
+    market_gap = calcular_market_gap(local, visita, probs)
+
     factores = {
+        "liga": contexto["league_key"],
         "bono_jerarquia": bono_jerarquia,
         "influencia_med": influencia_med,
         "boost_fortin": contexto["boost_fortin"],
@@ -590,6 +969,15 @@ def ejecutar_simulacion(local, visita, sims, contexto):
         "forma_visitante": contexto["forma_visitante"]["factor"],
         "carga_local": contexto["carga_local"]["factor_carga"],
         "carga_visitante": contexto["carga_visitante"]["factor_carga"],
+        "fatigue_local": contexto["fatigue_local"]["factor"],
+        "fatigue_visitante": contexto["fatigue_visitante"]["factor"],
+        "opi_local": contexto["opi_local"]["opi"],
+        "opi_visitante": contexto["opi_visitante"]["opi"],
+        "dls": contexto["draw_module"]["dls"],
+        "ffi": contexto["fragility"]["ffi"],
+        "msf_local": contexto["style_factor"]["msf_local"],
+        "msf_visitante": contexto["style_factor"]["msf_visitante"],
+        "mmg": market_gap["mmg"],
         "descanso_local": contexto["ajuste_descanso_local"],
         "descanso_visitante": contexto["ajuste_descanso_visitante"],
         "lesiones_local": contexto["ajuste_lesiones_local"],
@@ -598,12 +986,12 @@ def ejecutar_simulacion(local, visita, sims, contexto):
         "memoria_v": bono_mem_v,
     }
 
-    return res, marcadores, total_goles, (vl, vv, e), factores
+    return res, marcadores, total_goles, (vl, vv, e), factores, probs, market_gap
 
 
 def analizar(local, visita, db):
     contexto = construir_contexto_partido(local, visita, db)
-    res, marcadores, total_goles, h2h, factores = ejecutar_simulacion(local, visita, SIMULACIONES, contexto)
+    res, marcadores, total_goles, h2h, factores, probs, market_gap = ejecutar_simulacion(local, visita, SIMULACIONES, contexto)
 
     top_10 = marcadores.most_common(10)
     ganador_porcentaje = max(res, key=res.get)
@@ -647,6 +1035,7 @@ def analizar(local, visita, db):
     print(f"   🚀 {visita['nombre']}: {(res['V']/SIMULACIONES)*100:.2f}%")
 
     shock = calcular_shock_index(local, visita, res, contexto)
+    confianza = clasificar_confianza(probs, contexto)
     if shock >= 0.2:
         print(f"\n⚠️ Potencial sorpresa: {shock*100:.1f}% (valor alto)")
     else:
@@ -672,7 +1061,7 @@ def analizar(local, visita, db):
 def analizar_partido_jugado(local, visita, gl_real, gv_real, db):
     print(f"\n⏱️ SIMULANDO PARTIDO JUGADO: {local['nombre']} {gl_real} - {gv_real} {visita['nombre']}")
     contexto = construir_contexto_partido(local, visita, db)
-    res, marcadores, _, _, _ = ejecutar_simulacion(local, visita, SIMULACIONES, contexto)
+    res, marcadores, _, _, _, probs, _ = ejecutar_simulacion(local, visita, SIMULACIONES, contexto)
 
     ganador_porcentaje = max(res, key=res.get)
     marcador_top = marcadores.most_common(1)[0][0]
@@ -709,6 +1098,8 @@ def analizar_partido_jugado(local, visita, gl_real, gv_real, db):
     print(f"➜ Marcador Top: {marcador_top[0]}-{marcador_top[1]} | Real: {gl_real}-{gv_real}")
     print("-" * 50)
 
+    confianza = clasificar_confianza(probs, contexto)
+
     registro = {
         "local": local["nombre"],
         "visitante": visita["nombre"],
@@ -717,6 +1108,7 @@ def analizar_partido_jugado(local, visita, gl_real, gv_real, db):
         "acierto_ganador": bool(acierto_ganador),
         "acierto_resultado_exacto": bool(acierto_resultado_exacto),
         "acierto_tendencia": bool(acierto_tendencia),
+        "confianza": confianza["nivel"],
     }
     guardar_historial(registro)
     print("💾 Guardado en historial_partidos.json con éxito.\n")
@@ -772,7 +1164,7 @@ def simular_torneo(equipos_lista, db, ida_vuelta):
 
     for local, visita in partidos:
         contexto = construir_contexto_partido(local, visita, db)
-        _, marcadores, _, _, _ = ejecutar_simulacion(local, visita, 100, contexto)
+        _, marcadores, _, _, _, _, _ = ejecutar_simulacion(local, visita, 100, contexto)
 
         resultado_final = marcadores.most_common(1)[0][0]
         gl, gv = resultado_final[0], resultado_final[1]
@@ -842,12 +1234,58 @@ def mostrar_resumen_db(db):
     return None
 
 
+
+def backtesting_rapido(db, max_partidos=100):
+    historial = cargar_historial()
+    if len(historial) < 5:
+        print("\n⚠️ Backtesting no disponible: historial insuficiente.\n")
+        return
+
+    muestra = historial[-max_partidos:]
+    aciertos = 0
+    empates_detectados = 0
+    empates_reales = 0
+
+    for p in muestra:
+        l_key = normalizar_nombre(p["local"])
+        v_key = normalizar_nombre(p["visitante"])
+        if l_key not in db or v_key not in db:
+            continue
+
+        local, visita = db[l_key], db[v_key]
+        contexto = construir_contexto_partido(local, visita, db)
+        res, _, _, _, _, _, _ = ejecutar_simulacion(local, visita, 4000, contexto)
+        pred = max(res, key=res.get)
+
+        real = "L" if p["goles_local"] > p["goles_visitante"] else "V" if p["goles_local"] < p["goles_visitante"] else "E"
+        if real == "E":
+            empates_reales += 1
+        if pred == "E":
+            empates_detectados += 1
+        if pred == real:
+            aciertos += 1
+
+    total = len(muestra)
+    if total == 0:
+        print("\n⚠️ Backtesting no ejecutado: sin partidos válidos.\n")
+        return
+
+    print("\n📈 BACKTEST RÁPIDO (módulos activos)")
+    print(f"   - Partidos evaluados: {total}")
+    print(f"   - Precisión 1X2: {(aciertos/total)*100:.2f}%")
+    print(f"   - Empates reales: {empates_reales} | Empates predichos: {empates_detectados}")
+    print("   - Nota: usar >=100 partidos para comparar módulos on/off con mayor robustez.\n")
+
 def procesar_entrada(entrada, db):
     if entrada == "salir":
         return False
 
     if entrada == "ef":
         mostrar_efectividad()
+        return True
+
+    if entrada == "bt":
+        backtesting_rapido(db, max_partidos=100)
         return True
 
     match_jugado = re.match(r"^(.+?)\s+(\d+)\s*-\s*(\d+)\s+(.+)$", entrada)
@@ -891,15 +1329,17 @@ def procesar_entrada(entrada, db):
                 print("❌ No se pudieron identificar los equipos.")
             return True
 
-    print("⚠️ Formato no reconocido. Usa 'EqA - EqB', 'EqA 1 - 0 EqB', 'ef', 'db', o 'Eq1, Eq2, Eq3 Y'")
+    print("⚠️ Formato no reconocido. Usa 'EqA - EqB', 'EqA 1 - 0 EqB', 'ef', 'bt', 'db', o 'Eq1, Eq2, Eq3 Y'")
     return True
 
 
 def main():
+    global LEAGUE_CALIBRATION
     db = cargar_db()
     if not db:
         return
-    print("\n🚀 PREDICTOR v6.0 (Contextual + Shock Index + Fortín real)")
+    LEAGUE_CALIBRATION = calibrar_ligas(db)
+    print("\n🚀 PREDICTOR v6.0 (Modular avanzado + calibración por liga)")
     while True:
         entrada = input(">> Ingrese comando (o 'salir'): ").lower().strip()
 
@@ -914,7 +1354,6 @@ def main():
         continuar = procesar_entrada(entrada, db)
         if not continuar:
             break
-
 
 if __name__ == "__main__":
     main()
