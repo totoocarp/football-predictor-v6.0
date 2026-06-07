@@ -17,6 +17,7 @@ Abre `http://localhost:8000`.
 ## Arquitectura
 
 - `app/gemini_client.py`: integración con Gemini 2.5 Flash y prompt estricto de fuentes; Gemini solo devuelve datos, no ratings ni predicciones.
+- `app/gemini_client.py`: integración con Gemini 2.5 Flash y prompt estricto de fuentes.
 - `app/cache.py`: caché local de consultas durante 24 horas.
 - `app/models.py`: validación Pydantic.
 - `app/stat_catalog.py` y `config/stat_variables.json`: catálogo de 118 variables obligatorias.

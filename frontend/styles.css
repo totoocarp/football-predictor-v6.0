@@ -14,11 +14,6 @@ input { width:100%; border:1px solid rgba(255,255,255,.14); background:#091426; 
 .checkbox input { width:auto; }
 button { border:0; border-radius:16px; padding:14px 18px; background:linear-gradient(135deg, var(--accent), var(--accent2)); color:#03111f; font-weight:900; cursor:pointer; }
 .status { margin:18px 0; padding:16px 18px; border-radius:16px; background:#10223d; border:1px solid rgba(255,255,255,.08); }
-.progress-card { display:grid; gap:10px; margin-bottom:18px; }
-.progress-step { color:var(--muted); font-weight:800; letter-spacing:.01em; }
-.progress-step span { display:inline-block; width:34px; color:#4d6386; }
-.progress-step.done { color:var(--text); }
-.progress-step.done span { color:var(--accent2); }
 .status.error { background:#3b1620; color:#ffd8d8; }
 .hidden { display:none !important; }
 .results-grid { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:18px; }

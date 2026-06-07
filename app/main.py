@@ -7,7 +7,6 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
 from app.config import FRONTEND_DIR, load_variable_catalog, load_weights
-from app.data_validation import validate_and_complete_match
 from app.explanation import build_explanation
 from app.gemini_client import GeminiClient, GeminiError
 from app.models import PredictionRequest, PredictionResponse
@@ -42,9 +41,6 @@ def public_config() -> dict[str, object]:
 async def predict(request: PredictionRequest) -> PredictionResponse:
     try:
         match, cached = await GeminiClient().get_match_data(request.local, request.visitante, request.force_refresh)
-        # Defensive validation keeps stale/manual cache entries or partial Gemini JSON
-        # from reaching the rating engine with missing groups.
-        match = validate_and_complete_match(match)
         prepared = StatisticalEngine().prepare(match)
         simulation = MonteCarloSimulator().run(match, prepared, request.simulations)
         explanation = build_explanation(match, prepared, simulation)
@@ -61,4 +57,4 @@ async def predict(request: PredictionRequest) -> PredictionResponse:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
     except Exception as exc:
         logger.exception("Prediction failed")
-        raise HTTPException(status_code=500, detail=f"No se pudo generar la predicción: {exc}") from exc
+        raise HTTPException(status_code=500, detail="No se pudo generar la predicción.") from exc

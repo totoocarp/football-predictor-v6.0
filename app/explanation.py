@@ -24,6 +24,8 @@ def build_explanation(match: MatchData, prepared: PreparedStats, simulation: Sim
 
     elo_diff = _safe_difference(local_frame, visitor_frame, "general_strength.elo_global")
     xg_diff = _safe_difference(local_frame, visitor_frame, "general_strength.xg_difference")
+    elo_diff = _value(local_frame, "general_strength.elo_global") - _value(visitor_frame, "general_strength.elo_global")
+    xg_diff = _value(local_frame, "general_strength.xg_difference") - _value(visitor_frame, "general_strength.xg_difference")
     home_xg = _value(local_frame, "home_away.home_xg")
     away_xg = _value(visitor_frame, "home_away.away_xg")
 
@@ -36,42 +38,21 @@ def build_explanation(match: MatchData, prepared: PreparedStats, simulation: Sim
         "factores_visitante": factors_away,
         "lesiones_importantes": injuries,
         "diferencias_clave": {
-            "elo_global_local_menos_visitante": _json_number(elo_diff),
-            "xg_difference_local_menos_visitante": _json_number(xg_diff),
-            "xg_local_en_casa": _json_number(home_xg),
-            "xg_visitante_fuera": _json_number(away_xg),
+            "elo_global_local_menos_visitante": round(elo_diff, 2),
+            "xg_difference_local_menos_visitante": round(xg_diff, 2),
+            "xg_local_en_casa": None if pd.isna(home_xg) else round(home_xg, 2),
+            "xg_visitante_fuera": None if pd.isna(away_xg) else round(away_xg, 2),
         },
         "impacto_localia": "La localía aumenta el lambda del equipo local mediante el multiplicador configurable de simulación y las variables específicas home_away.",
-        "fortalezas_debilidades": _build_strengths_and_weaknesses(match, prepared),
+        "fortalezas_debilidades": {
+            match.local.nombre: {"fortalezas": match.local.fortalezas, "debilidades": match.local.debilidades},
+            match.visitante.nombre: {"fortalezas": match.visitante.fortalezas, "debilidades": match.visitante.debilidades},
+        },
         "lectura_probabilidades": f"{match.local.nombre}: {simulation.home_win_probability}%, empate: {simulation.draw_probability}%, {match.visitante.nombre}: {simulation.away_win_probability}%.",
     }
 
 
-def _build_strengths_and_weaknesses(match: MatchData, prepared: PreparedStats) -> dict[str, dict[str, list[str]]]:
-    """Generate qualitative notes in Python so Gemini only supplies raw data."""
-    local_scores = prepared.ratings["local"].group_scores
-    visitor_scores = prepared.ratings["visitante"].group_scores
-    return {
-        match.local.nombre: _team_notes(local_scores, visitor_scores),
-        match.visitante.nombre: _team_notes(visitor_scores, local_scores),
-    }
-
-
-def _team_notes(own_scores: dict[str, float], rival_scores: dict[str, float]) -> dict[str, list[str]]:
-    deltas = []
-    for group, own_value in own_scores.items():
-        rival_value = rival_scores.get(group)
-        if rival_value is None:
-            continue
-        deltas.append((group, own_value - rival_value))
-    strengths = [f"Ventaja en {group.replace('_', ' ')} ({delta:+.1f})" for group, delta in sorted(deltas, key=lambda item: item[1], reverse=True)[:3] if delta > 2]
-    weaknesses = [f"Desventaja en {group.replace('_', ' ')} ({delta:+.1f})" for group, delta in sorted(deltas, key=lambda item: item[1])[:3] if delta < -2]
-    return {"fortalezas": strengths, "debilidades": weaknesses}
-
-
 def _append_edge(home: list[str], away: list[str], label: str, home_value: float, away_value: float, home_name: str, away_name: str) -> None:
-    if not (_is_finite(home_value) and _is_finite(away_value)):
-        return
     diff = home_value - away_value
     if abs(diff) < 3:
         return
@@ -80,14 +61,6 @@ def _append_edge(home: list[str], away: list[str], label: str, home_value: float
         home.append(text + home_name)
     else:
         away.append(text + away_name)
-
-
-def _safe_difference(left_frame: pd.DataFrame, right_frame: pd.DataFrame, key: str) -> float | None:
-    left = _value(left_frame, key)
-    right = _value(right_frame, key)
-    if not (_is_finite(left) and _is_finite(right)):
-        return None
-    return left - right
 
 
 def _value(frame: pd.DataFrame, key: str) -> float:
@@ -100,16 +73,6 @@ def _value(frame: pd.DataFrame, key: str) -> float:
     return float(value)
 
 
-def _json_number(value: float | None) -> float | None:
-    if value is None or not _is_finite(value):
-        return None
-    return round(float(value), 2)
-
-
-def _is_finite(value: float | None) -> bool:
-    return value is not None and math.isfinite(float(value))
-
-
 def _injury_summary(frame: pd.DataFrame) -> dict[str, float | None]:
     keys = {
         "titulares_lesionados": "injuries_suspensions.injured_starters",
@@ -119,5 +82,6 @@ def _injury_summary(frame: pd.DataFrame) -> dict[str, float | None]:
     }
     summary: dict[str, float | None] = {}
     for label, key in keys.items():
-        summary[label] = _json_number(_value(frame, key))
+        value = _value(frame, key)
+        summary[label] = None if pd.isna(value) else round(value, 2)
     return summary

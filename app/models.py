@@ -17,13 +17,6 @@ class StatisticValue(BaseModel):
     fuente: str = Field(default="No verificada")
     confianza: Confidence = Confidence.LOW
 
-    @field_validator("confianza", mode="before")
-    @classmethod
-    def normalize_confidence(cls, value: object) -> object:
-        if isinstance(value, str):
-            return value.strip().upper()
-        return value
-
     @field_validator("fuente")
     @classmethod
     def source_is_not_empty(cls, value: str) -> str:

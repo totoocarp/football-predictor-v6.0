@@ -1,15 +1,11 @@
 const form = document.querySelector('#prediction-form');
 const statusBox = document.querySelector('#status');
 const results = document.querySelector('#results');
-const progressBox = document.querySelector('#progress');
-const progressSteps = ['stats', 'validation', 'ratings', 'simulation', 'results'];
-let progressTimers = [];
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
-  setStatus('Iniciando predicción. Gemini solo buscará datos; el predictor hará todos los cálculos.', false);
+  setStatus('Consultando Gemini y ejecutando simulación Monte Carlo...', false);
   results.classList.add('hidden');
-  startProgress(Number(document.querySelector('#simulations').value || 20000));
   const payload = {
     local: document.querySelector('#home').value,
     visitante: document.querySelector('#away').value,
@@ -24,11 +20,9 @@ form.addEventListener('submit', async (event) => {
     });
     const data = await response.json();
     if (!response.ok) throw new Error(data.detail || 'Error desconocido');
-    completeProgress();
     render(data);
     setStatus(data.cached ? 'Resultado reutilizado desde caché local de 24 horas.' : 'Predicción generada con datos nuevos de Gemini.', false);
   } catch (error) {
-    stopProgress();
     setStatus(error.message, true);
   }
 });
@@ -37,47 +31,6 @@ function setStatus(message, isError) {
   statusBox.textContent = message;
   statusBox.classList.toggle('hidden', false);
   statusBox.classList.toggle('error', isError);
-}
-
-function startProgress(simulations) {
-  stopProgress();
-  progressBox.classList.remove('hidden');
-  updateSimulationLabel(simulations);
-  progressSteps.forEach(step => markStep(step, false));
-  const schedule = [
-    ['stats', 200],
-    ['validation', 900],
-    ['ratings', 1500],
-    ['simulation', 2200],
-  ];
-  progressTimers = schedule.map(([step, delay]) => window.setTimeout(() => markStep(step, true), delay));
-}
-
-function completeProgress() {
-  stopProgress(false);
-  progressBox.classList.remove('hidden');
-  progressSteps.forEach(step => markStep(step, true));
-}
-
-function stopProgress(hide = true) {
-  progressTimers.forEach(timer => window.clearTimeout(timer));
-  progressTimers = [];
-  if (hide) progressBox.classList.add('hidden');
-}
-
-function markStep(step, done) {
-  const node = progressBox.querySelector(`[data-step="${step}"]`);
-  if (!node) return;
-  node.classList.toggle('done', done);
-  const marker = node.querySelector('span');
-  if (marker) marker.textContent = done ? '[✓]' : '[ ]';
-}
-
-function updateSimulationLabel(simulations) {
-  const node = progressBox.querySelector('[data-step="simulation"]');
-  if (!node) return;
-  const marker = node.querySelector('span')?.outerHTML || '<span>[ ]</span>';
-  node.innerHTML = `${marker} Ejecutando ${Number(simulations).toLocaleString('es-ES')} simulaciones`;
 }
 
 function render(data) {
@@ -134,7 +87,6 @@ function renderExplanation(explanation) {
     <h3>Favorece al visitante</h3><ul>${listItems(explanation.factores_visitante)}</ul>
     <h3>Diferencias clave</h3><pre>${escapeHtml(JSON.stringify(explanation.diferencias_clave, null, 2))}</pre>
     <h3>Lesiones y suspensiones</h3><pre>${escapeHtml(JSON.stringify(explanation.lesiones_importantes, null, 2))}</pre>
-    <h3>Fortalezas y debilidades calculadas por el predictor</h3><pre>${escapeHtml(JSON.stringify(explanation.fortalezas_debilidades, null, 2))}</pre>
     <p>${escapeHtml(explanation.impacto_localia)}</p>
     <p><strong>${escapeHtml(explanation.lectura_probabilidades)}</strong></p>`;
 }

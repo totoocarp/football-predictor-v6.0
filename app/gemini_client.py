@@ -51,7 +51,6 @@ REGLAS ABSOLUTAS:
 - Usa únicamente estas fuentes: {', '.join(ALLOWED_SOURCES)}.
 - No inventes estadísticas. No estimes. No infieras.
 - Si un dato no existe o no puede verificarse: valor=null y confianza=LOW.
-- Tu única tarea es buscar y devolver datos verificables; no calcules ratings, probabilidades, predicciones, fortalezas, debilidades ni explicaciones.
 - Cada estadística debe tener exactamente: {{"valor": número|string|null, "fuente": "Nombre fuente", "confianza": "HIGH|MEDIUM|LOW"}}.
 - Devuelve solo JSON válido, sin Markdown, sin comentarios, sin texto fuera del JSON.
 - Si una variable está condicionada al partido, interpreta el equipo local como local y el visitante como visitante.
@@ -61,8 +60,8 @@ CATÁLOGO OBLIGATORIO DE VARIABLES:
 
 FORMATO EXACTO DE RESPUESTA:
 {{
-  "local": {{"nombre": "{home}", "estadisticas": {{...}}, "notas_fuentes": []}},
-  "visitante": {{"nombre": "{away}", "estadisticas": {{...}}, "notas_fuentes": []}},
+  "local": {{"nombre": "{home}", "estadisticas": {{...}}, "fortalezas": [], "debilidades": [], "notas_fuentes": []}},
+  "visitante": {{"nombre": "{away}", "estadisticas": {{...}}, "fortalezas": [], "debilidades": [], "notas_fuentes": []}},
   "contexto": {{"fecha_consulta": "ISO-8601", "fuentes_permitidas": {json.dumps(ALLOWED_SOURCES)}}}
 }}
 """.strip()
