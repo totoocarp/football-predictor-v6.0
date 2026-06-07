@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import math
 from typing import Any
 
 import pandas as pd
@@ -21,6 +22,8 @@ def build_explanation(match: MatchData, prepared: PreparedStats, simulation: Sim
     _append_edge(factors_home, factors_away, "forma reciente", local.recent_form, visitor.recent_form, match.local.nombre, match.visitante.nombre)
     _append_edge(factors_home, factors_away, "defensa", local.defensive, visitor.defensive, match.local.nombre, match.visitante.nombre)
 
+    elo_diff = _safe_difference(local_frame, visitor_frame, "general_strength.elo_global")
+    xg_diff = _safe_difference(local_frame, visitor_frame, "general_strength.xg_difference")
     elo_diff = _value(local_frame, "general_strength.elo_global") - _value(visitor_frame, "general_strength.elo_global")
     xg_diff = _value(local_frame, "general_strength.xg_difference") - _value(visitor_frame, "general_strength.xg_difference")
     home_xg = _value(local_frame, "home_away.home_xg")
