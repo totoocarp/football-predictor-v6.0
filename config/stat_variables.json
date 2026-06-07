@@ -1,0 +1,784 @@
+{
+  "groups": [
+    {
+      "key": "general_strength",
+      "label": "General Strength",
+      "variables": [
+        {
+          "key": "elo_global",
+          "name": "Elo global",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "elo_last_12_months",
+          "name": "Elo de los últimos 12 meses",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "league_position",
+          "name": "Posición en la liga",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "points_per_match",
+          "name": "Puntos por partido",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "goal_difference",
+          "name": "Diferencia de gol",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "xg_difference",
+          "name": "Diferencia de xG",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "win_percentage",
+          "name": "Porcentaje de victorias",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "goals_per_match",
+          "name": "Goles por partido",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "goals_conceded_per_match",
+          "name": "Goles recibidos por partido",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "xg_per_match",
+          "name": "xG por partido",
+          "direction": "higher",
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "recent_form",
+      "label": "Recent Form",
+      "variables": [
+        {
+          "key": "points_last_5",
+          "name": "Puntos últimos 5 partidos",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "points_last_10",
+          "name": "Puntos últimos 10 partidos",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "xg_last_5",
+          "name": "xG últimos 5 partidos",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "xga_last_5",
+          "name": "xGA últimos 5 partidos",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "xg_difference_last_5",
+          "name": "Diferencia xG últimos 5 partidos",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "goals_last_5",
+          "name": "Goles últimos 5 partidos",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "goals_conceded_last_5",
+          "name": "Goles recibidos últimos 5 partidos",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "wins_last_5",
+          "name": "Victorias últimos 5 partidos",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "wins_last_10",
+          "name": "Victorias últimos 10 partidos",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "clean_sheets_last_10",
+          "name": "Porterías a cero últimos 10 partidos",
+          "direction": "higher",
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "attack",
+      "label": "Attack",
+      "variables": [
+        {
+          "key": "xg",
+          "name": "xG",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "actual_goals",
+          "name": "Goles reales",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "shots",
+          "name": "Remates",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "shots_on_target",
+          "name": "Remates al arco",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "shooting_accuracy",
+          "name": "Precisión de remate",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "shot_conversion",
+          "name": "Conversión de remates",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "big_chances_created",
+          "name": "Grandes ocasiones creadas",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "xa",
+          "name": "xA",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "touches_opposition_box",
+          "name": "Toques en área rival",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "set_piece_goals",
+          "name": "Goles de pelota parada",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "corner_goals",
+          "name": "Goles de córner",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "free_kick_goals",
+          "name": "Goles de tiro libre",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "penalty_goals",
+          "name": "Goles de penal",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "crosses_completed",
+          "name": "Centros completados",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "crosses_attempted",
+          "name": "Centros intentados",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "successful_counterattacks",
+          "name": "Contraataques exitosos",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "transition_goals",
+          "name": "Goles en transición",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "key_passes",
+          "name": "Pases clave",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "successful_attacking_actions",
+          "name": "Acciones ofensivas exitosas",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "final_third_entries",
+          "name": "Entradas al último tercio",
+          "direction": "higher",
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "midfield_control",
+      "label": "Midfield Control",
+      "variables": [
+        {
+          "key": "average_possession",
+          "name": "Posesión promedio",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "pass_accuracy",
+          "name": "Precisión de pases",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "progressive_passes",
+          "name": "Pases progresivos",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "passes_final_third",
+          "name": "Pases al último tercio",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "passes_opposition_box",
+          "name": "Pases al área rival",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "sequences_10_plus_passes",
+          "name": "Secuencias de 10 o más pases",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "midfield_recoveries",
+          "name": "Recuperaciones en mediocampo",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "turnovers",
+          "name": "Pérdidas de balón",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "successful_pressure",
+          "name": "Presión exitosa",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "ppda",
+          "name": "PPDA",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "midfield_duels_won",
+          "name": "Duelos ganados en mediocampo",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "midfield_interceptions",
+          "name": "Intercepciones en mediocampo",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "carry_progressions",
+          "name": "Progresiones por conducción",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "progressive_carry_distance",
+          "name": "Distancia progresada con balón",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "successful_switches",
+          "name": "Cambios de orientación exitosos",
+          "direction": "higher",
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "defense",
+      "label": "Defense",
+      "variables": [
+        {
+          "key": "xga",
+          "name": "xGA",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "goals_conceded",
+          "name": "Goles recibidos",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "shots_against",
+          "name": "Remates recibidos",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "shots_on_target_against",
+          "name": "Remates al arco recibidos",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "big_chances_conceded",
+          "name": "Grandes ocasiones concedidas",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "clean_sheets",
+          "name": "Porterías a cero",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "interceptions",
+          "name": "Intercepciones",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "successful_tackles",
+          "name": "Entradas exitosas",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "clearances",
+          "name": "Despejes",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "shot_blocks",
+          "name": "Bloqueos de remates",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "errors_leading_to_shot",
+          "name": "Errores que terminan en remate",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "errors_leading_to_goal",
+          "name": "Errores que terminan en gol",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "defensive_duels_won",
+          "name": "Duelos defensivos ganados",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "aerial_duels_won",
+          "name": "Duelos aéreos ganados",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "defensive_recoveries",
+          "name": "Recuperaciones defensivas",
+          "direction": "higher",
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "goalkeeper",
+      "label": "Goalkeeper",
+      "variables": [
+        {
+          "key": "save_percentage",
+          "name": "Porcentaje de atajadas",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "goals_prevented_vs_xgot",
+          "name": "Goles evitados respecto al xGOT",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "clean_sheets",
+          "name": "Porterías a cero",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "successful_claims",
+          "name": "Salidas exitosas",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "long_pass_accuracy",
+          "name": "Precisión en pases largos",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "goalkeeper_errors",
+          "name": "Errores del arquero",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "penalties_saved",
+          "name": "Penales atajados",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "saves_per_match",
+          "name": "Atajadas por partido",
+          "direction": "higher",
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "home_away",
+      "label": "Home Away",
+      "variables": [
+        {
+          "key": "home_points_per_match",
+          "name": "Puntos por partido de local",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "away_points_per_match",
+          "name": "Puntos por partido de visitante",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "home_xg",
+          "name": "xG de local",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "away_xg",
+          "name": "xG de visitante",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "home_xga",
+          "name": "xGA de local",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "away_xga",
+          "name": "xGA de visitante",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "home_goals",
+          "name": "Goles de local",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "away_goals",
+          "name": "Goles de visitante",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "home_goals_conceded",
+          "name": "Goles recibidos de local",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "away_goals_conceded",
+          "name": "Goles recibidos de visitante",
+          "direction": "lower",
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "squad",
+      "label": "Squad",
+      "variables": [
+        {
+          "key": "total_market_value",
+          "name": "Valor total de mercado",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "average_starting_xi_value",
+          "name": "Valor promedio del XI titular",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "average_xi_age",
+          "name": "Edad promedio del XI",
+          "direction": "neutral",
+          "required": true
+        },
+        {
+          "key": "starting_xi_accumulated_minutes",
+          "name": "Minutos acumulados del XI titular",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "international_players",
+          "name": "Cantidad de internacionales",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "average_top_division_experience",
+          "name": "Experiencia promedio en primera división",
+          "direction": "higher",
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "injuries_suspensions",
+      "label": "Injuries Suspensions",
+      "variables": [
+        {
+          "key": "injured_starters",
+          "name": "Titulares lesionados",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "injured_market_value",
+          "name": "Valor de mercado lesionado",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "injured_goals_contributed",
+          "name": "Goles aportados por lesionados",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "injured_assists_contributed",
+          "name": "Asistencias aportadas por lesionados",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "suspended_starters",
+          "name": "Titulares suspendidos",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "minutes_lost_absences",
+          "name": "Minutos perdidos por ausencias",
+          "direction": "lower",
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "fatigue_schedule",
+      "label": "Fatigue Schedule",
+      "variables": [
+        {
+          "key": "rest_days",
+          "name": "Días de descanso",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "matches_last_14_days",
+          "name": "Partidos jugados en últimos 14 días",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "matches_last_30_days",
+          "name": "Partidos jugados en últimos 30 días",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "recent_travel_distance",
+          "name": "Distancia recorrida en viajes recientes",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "coach_average_rotation",
+          "name": "Rotación promedio del entrenador",
+          "direction": "neutral",
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "head_to_head",
+      "label": "Head To Head",
+      "variables": [
+        {
+          "key": "wins_last_5_h2h",
+          "name": "Victorias en los últimos 5 enfrentamientos",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "goal_difference_last_5_h2h",
+          "name": "Diferencia de gol en los últimos 5 enfrentamientos",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "average_xg_recent_h2h",
+          "name": "xG promedio en enfrentamientos recientes",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "performance_current_stadium",
+          "name": "Rendimiento jugando en el estadio actual",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "unbeaten_matches_vs_rival",
+          "name": "Partidos sin perder frente al rival",
+          "direction": "higher",
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "betting_market",
+      "label": "Betting Market",
+      "variables": [
+        {
+          "key": "home_odds",
+          "name": "Cuota local",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "draw_odds",
+          "name": "Cuota empate",
+          "direction": "neutral",
+          "required": true
+        },
+        {
+          "key": "away_odds",
+          "name": "Cuota visitante",
+          "direction": "lower",
+          "required": true
+        },
+        {
+          "key": "home_implied_probability",
+          "name": "Probabilidad implícita local",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "draw_implied_probability",
+          "name": "Probabilidad implícita empate",
+          "direction": "neutral",
+          "required": true
+        },
+        {
+          "key": "away_implied_probability",
+          "name": "Probabilidad implícita visitante",
+          "direction": "higher",
+          "required": true
+        },
+        {
+          "key": "recent_odds_movement",
+          "name": "Variación reciente de cuotas",
+          "direction": "neutral",
+          "required": true
+        },
+        {
+          "key": "bookmaker_consensus",
+          "name": "Consenso de casas de apuestas",
+          "direction": "higher",
+          "required": true
+        }
+      ]
+    }
+  ]
+}
