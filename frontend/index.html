@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Predictor de Fútbol Monte Carlo</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Gemini 2.5 Flash · Python · Monte Carlo</p>
+        <h1>Predictor de Fútbol Avanzado</h1>
+        <p>Consulta más de 100 variables verificadas, transforma ratings y simula 20.000 partidos con NumPy, Pandas y SciPy.</p>
+      </div>
+      <form id="prediction-form" class="card form-card">
+        <label>Equipo local<input id="home" required minlength="2" placeholder="Ej. Real Madrid" /></label>
+        <label>Equipo visitante<input id="away" required minlength="2" placeholder="Ej. Barcelona" /></label>
+        <label>Simulaciones<input id="simulations" type="number" min="1000" max="100000" value="20000" /></label>
+        <label class="checkbox"><input id="force-refresh" type="checkbox" /> Forzar consulta nueva a Gemini</label>
+        <button type="submit">Predecir partido</button>
+      </form>
+    </section>
+
+    <section id="status" class="status hidden"></section>
+    <section id="progress" class="card progress-card hidden" aria-live="polite">
+      <div class="progress-step" data-step="stats"><span>[ ]</span> Consultando estadísticas</div>
+      <div class="progress-step" data-step="validation"><span>[ ]</span> Validando datos</div>
+      <div class="progress-step" data-step="ratings"><span>[ ]</span> Calculando ratings</div>
+      <div class="progress-step" data-step="simulation"><span>[ ]</span> Ejecutando 20.000 simulaciones</div>
+      <div class="progress-step" data-step="results"><span>[ ]</span> Generando resultados</div>
+    </section>
+
+    <section id="results" class="hidden results-grid">
+      <article class="card wide">
+        <h2>Probabilidades</h2>
+        <div id="probabilities" class="probabilities"></div>
+      </article>
+      <article class="card">
+        <h2>Goles esperados</h2>
+        <div id="expected-goals"></div>
+      </article>
+      <article class="card">
+        <h2>Top 10 marcadores</h2>
+        <ol id="top-scores"></ol>
+      </article>
+      <article class="card wide">
+        <h2>Ratings</h2>
+        <div id="ratings" class="ratings"></div>
+      </article>
+      <article class="card wide">
+        <h2>Influencia por grupo</h2>
+        <div id="influences" class="chips"></div>
+      </article>
+      <article class="card wide">
+        <h2>Explicación</h2>
+        <div id="explanation"></div>
+      </article>
+      <article class="card wide">
+        <h2>Estadísticas utilizadas y fuentes</h2>
+        <div id="stats-table" class="table-wrap"></div>
+      </article>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
